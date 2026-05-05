@@ -17,109 +17,98 @@ import {
   ChevronLeft,
   ChevronRight
 } from "lucide-react";
-import Markdown from "react-markdown";
 
 const productData = {
-  name: "Precision 0.1cc Fine Mist Sprayer",
-  subtitle: "SS304 Spring PP Mist Sprayer Pump For Bottles",
+  name: "Precision Bottle Trigger Sprayer",
+  subtitle: "Fine Mist Trigger Spray Head 1.0cc Customizable (Type D)",
   images: [
-    "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/cb9a265b-1986-4ea4-8b41-ca3e25b1cbdc.png",
-    "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/3fc052cb-b807-44e7-89c6-9871ecbc8bf7%20(1).png",
-    "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/3fc052cb-b807-44e7-89c6-9871ecbc8bf7%20(1).png",
-    "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/3fc052cb-b807-44e7-89c6-9871ecbc8bf7%20(1).png"
+    "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/Yellowtrigger.png"
   ],
   moq: "10,000 PCS",
   price: "Negotiable",
-  packaging: "1400-2500PCS/CTN, Means(CM): 57*33*39",
+  packaging: "500PCS/CTN, Means(CM): 57*33*39",
   delivery: "10-15 Days",
   payment: "D/P, T/T",
-  capacity: "5,000,000 PCS/WEEK",
+  capacity: "500,000 PCS/WEEK",
   origin: "Quzhou, Zhejiang, China",
   specs: [
-    { label: "Product", value: "Fine Mist Sprayer" },
-    { label: "Dosage", value: "0.1CC" },
-    { label: "Material", value: "PP (Food Grade)" },
-    { label: "Spring", value: "304 Stainless Steel" },
-    { label: "Available Sizes", value: "18/410, 20/410, 24/410, 28/410" },
-    { label: "Color", value: "Any Custom RAL/Pantone" },
+    { label: "Product", value: "Bottle Trigger Sprayer" },
+    { label: "Dosage", value: "1.0 ± 0.1ml" },
+    { label: "Material", value: "PP (Polypropylene)" },
+    { label: "Spring", value: "All-Plastic (Non-Metal)" },
+    { label: "Neck Size", value: "28/400, 28/410" },
+    { label: "Color", value: "Any Custom Color" },
   ],
   highlights: [
-    "Precision Fine Mist Sprayer",
-    "0.1cc Consistent Dosage",
-    "SS304 Marine Grade Spring"
+    "Precision 1.0cc Output",
+    "Laboratory-Grade Reliability",
+    "Sustainable All-Plastic Spring"
   ],
-  description: `Our cutting-edge fine mist sprayer represents the next evolution in precision dispensing technology, engineered to deliver superior performance across premium product categories. This advanced system transforms liquid formulations into consistently fine aerosol particles, ensuring optimal coverage and enhanced user experience through scientific atomization principles.`,
+  description: `The Precision Trigger-Type D spray head delivers exactly 1.0±0.1ml per spray, eliminating product waste and ensuring consistent application. Features a seamless outer shell for better durability and hygiene, preventing residue buildup — ideal for skincare and cosmetics.`,
   technicalSections: [
     {
-      title: "Technical Superiority",
+      title: "Precision Dispensing",
       icon: Cpu,
       items: [
-        { label: "Ultra-Fine Atomization", text: "Proprietary nozzle technology creates 50-100 micron particles" },
-        { label: "Precision Dosing", text: "0.1cc ± 0.05ml metering accuracy maintains formula integrity" },
-        { label: "Broad Compatibility", text: "Accommodates viscosities from 1-100 centipoise" },
-        { label: "Ergonomic Design", text: "Optimized 2.8N actuation force with non-slip ribbed surface" }
+        { label: "Dosage Control", text: "Delivers exactly 1.0±0.1ml per spray for formula integrity" },
+        { label: "Spray Patterns", text: "Choose from fine mist, stream, or adjustable patterns" },
+        { label: "Integrated Design", text: "Seamless shell for sleek appearance and hygiene" },
+        { label: "Non-Metal Spring", text: "All-plastic mechanical path prevents formula oxidation" }
       ]
     },
     {
-      title: "Innovative Applications",
-      icon: Microscope,
+      title: "Material & Build",
+      icon: Settings,
       items: [
-        { label: "Skincare", text: "Vitamin C, Retinol, Hyaluronic Acid, and Peptide treatments" },
-        { label: "Fragrance", text: "Scent layering systems and long-lasting diffusion" },
-        { label: "Healthcare", text: "Topical medications, sanitization, and wound care" }
+        { label: "PP Housing", text: "Chemical-resistant medical-grade polypropylene" },
+        { label: "Dip Tube Options", text: "Soft or rigid tubes, custom-cut to any bottle length" },
+        { label: "Closure Precision", text: "High-tolerance 28/400 and 28/410 threading" },
+        { label: "Crevice-Free", text: "No-residue architecture for highest hygiene standards" }
       ]
     },
     {
-      title: "Sustainable Technology",
-      icon: Leaf,
+      title: "Partnership Perks",
+      icon: BarChart3,
       items: [
-        { label: "Efficiency", text: "22% reduced plastic usage versus standard designs" },
-        { label: "Circular", text: "Easily disassembled for component recycling" },
-        { label: "Impact", text: "Extended lifecycle reduces environmental footprint" }
+        { label: "Customization", text: "Full color matching and custom carton printing" },
+        { label: "Samples", text: "Free samples available for compatibility testing" },
+        { label: "Scalability", text: "500,000 units weekly capacity for global growth" }
       ]
     }
   ],
   manufacturing: [
-    { title: "Clean Room Assembly", detail: "ISO Class 8 environment for critical components" },
-    { title: "Defect Detection", detail: "Machine vision systems with 0.01mm precision" },
-    { title: "Performance Logging", detail: "Batch-to-batch performance documentation" }
+    { title: "Optical Inspection", detail: "100% automated vision systems for dimensional accuracy" },
+    { title: "Leak Verification", detail: "Negative pressure testing on every production batch" },
+    { title: "Material Purity", detail: "Only virgin medical-grade PP utilized" }
   ],
   applications: [
-    { name: "Cosmetics", description: "Toner, makeup setting spray, floral water", icon: "✨" },
-    { name: "Skincare", description: "Moisturizing spray, facial mist", icon: "🧴" },
-    { name: "Fragrance", description: "Body mist, room spray, hair perfume", icon: "🌸" },
-    { name: "Personal Care", description: "Sunscreen, hand sanitizer, hair care", icon: "🧼" }
+    { name: "Cosmetics", description: "Facial mists, Makeup removers", icon: "✨" },
+    { name: "Skincare", description: "Toners, Setting sprays", icon: "🧴" },
+    { name: "Personal Care", description: "Sanitizers, Leave-in conditioners", icon: "🧼" },
+    { name: "Home & Life", description: "Room sprays, Aromatherapy", icon: "🌸" }
   ],
   customization: [
-    { title: "Colors", detail: "Pantone/RAL matching for pump & cap" },
-    { title: "Closure", detail: "Ribbed, smooth, or metal-sheathed options" },
-    { title: "Tube", detail: "Custom lengths (70mm to 250mm) & materials" },
-    { title: "Branding", detail: "Screen printing & hot stamping available" }
+    { title: "Color Match", detail: "Pantone/RAL matching for all components" },
+    { title: "Spray Mode", detail: "Fine mist, Stream, or Adjustable nozzle" },
+    { title: "Tube Length", detail: "Custom length & material for dip tubes" },
+    { title: "Branding", detail: "Custom carton printing & shipping marks" }
   ],
   faqs: [
-    { q: "Can I get free samples?", a: "Yes, we provide 1-3 free samples. Shipping cost is covered by the buyer." },
-    { q: "What is the standard lead time?", a: "10-15 days for standard colors, 20-25 days for custom Pantone matching." },
-    { q: "What certificates do you have?", a: "Our factory is ISO 9001:2015 certified, and products meet CE/SGS standards." }
+    { q: "Is the spring metal?", a: "No, this model features our proprietary all-plastic spring system, making it more eco-friendly and preventing chemical reactions with metal-sensitive formulas." },
+    { q: "What is the lead time?", a: "Typically 10-15 days after deposit receipt for standard configurations." },
+    { q: "Can I get samples?", a: "Yes, we encourage compatibility testing. Contact us for free samples." }
   ]
 };
 
 const QC_STEPS = [
-  { title: "Raw Material", desc: "100% Virgin PP verification" },
-  { title: "Injection", desc: "High-precision mold state check" },
-  { title: "Assembly", desc: "Automated leak & spray testing" },
-  { title: "Packaging", desc: "Dust-free layer-by-layer packing" }
+  { title: "Sourcing", desc: "Virgin PP & Plastic spring verif." },
+  { title: "Molding", desc: "High-precision Type-D mold check" },
+  { title: "Verification", desc: "1.0cc ±0.1ml dosage accuracy" },
+  { title: "Packing", desc: "Bulk packed with individual protection" }
 ];
 
-export default function PrecisionMistSprayerPage() {
+export default function PrecisionBottleTriggerPage() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-
-  const nextImage = () => {
-    setActiveImageIndex((prev) => (prev + 1) % productData.images.length);
-  };
-
-  const prevImage = () => {
-    setActiveImageIndex((prev) => (prev - 1 + productData.images.length) % productData.images.length);
-  };
 
   return (
     <main className="min-h-screen bg-white">
@@ -134,11 +123,11 @@ export default function PrecisionMistSprayerPage() {
             >
               <div className="space-y-4">
                 <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 font-black text-[10px] uppercase tracking-widest rounded-full">
-                  Advanced Dispensing System
+                  Trigger-Type D | Precision Series
                 </span>
                 <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black uppercase tracking-tighter text-slate-900 leading-[0.95]">
-                  Precision <br className="hidden lg:block" />
-                  <span className="text-blue-600">0.1cc Mist.</span>
+                  1.0cc <br className="hidden lg:block" />
+                  <span className="text-blue-600">Pure Mist.</span>
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl font-bold text-slate-400 uppercase tracking-tight">{productData.subtitle}</p>
               </div>
@@ -183,15 +172,15 @@ export default function PrecisionMistSprayerPage() {
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-4 pt-4 text-slate-400">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-3.5 h-3.5 text-green-500" />
-                  <span className="text-[9px] font-bold uppercase tracking-widest">In-Stock</span>
+                  <span className="text-[9px] font-bold uppercase tracking-widest">Global Shipping</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-3.5 h-3.5 text-blue-500" />
-                  <span className="text-[9px] font-bold uppercase tracking-widest">Trade Assurance</span>
+                  <span className="text-[9px] font-bold uppercase tracking-widest">Quality Guaranteed</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Truck className="w-3.5 h-3.5 text-orange-500" />
-                  <span className="text-[9px] font-bold uppercase tracking-widest">Fast Delivery</span>
+                  <Zap className="w-3.5 h-3.5 text-orange-500" />
+                  <span className="text-[9px] font-bold uppercase tracking-widest">1.0cc Precision</span>
                 </div>
               </div>
             </motion.div>
@@ -204,26 +193,11 @@ export default function PrecisionMistSprayerPage() {
               >
                 <div className="absolute top-4 right-4 lg:top-10 lg:right-10 flex gap-2 lg:gap-4 z-10">
                    <div className="w-8 h-8 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
-                      <ShieldCheck className="w-4 h-4 lg:w-6 lg:h-6 text-blue-600" />
+                      <Droplets className="w-4 h-4 lg:w-6 lg:h-6 text-blue-600" />
                    </div>
                    <div className="w-8 h-8 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
-                      <Zap className="w-4 h-4 lg:w-6 lg:h-6 text-orange-500" />
+                      <Microscope className="w-4 h-4 lg:w-6 lg:h-6 text-slate-900" />
                    </div>
-                </div>
-
-                <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button 
-                    onClick={prevImage}
-                    className="w-10 h-10 bg-white/90 backdrop-blur-sm shadow-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"
-                  >
-                    <ChevronLeft className="w-5 h-5" />
-                  </button>
-                  <button 
-                    onClick={nextImage}
-                    className="w-10 h-10 bg-white/90 backdrop-blur-sm shadow-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"
-                  >
-                    <ChevronRight className="w-5 h-5" />
-                  </button>
                 </div>
 
                 <AnimatePresence mode="wait">
@@ -239,30 +213,9 @@ export default function PrecisionMistSprayerPage() {
                 </AnimatePresence>
 
                 <div className="absolute bottom-6 left-6 lg:bottom-10 lg:left-10">
-                  <p className="text-[10px] font-black text-slate-300 uppercase tracking-[0.5em] vertical-text">MODEL: MILA-RIBBED-01</p>
+                  <p className="text-[10px] font-black text-slate-300 uppercase tracking-[0.5em] vertical-text">SERIAL: TYPE-D-1.0CC</p>
                 </div>
               </motion.div>
-
-              {/* Thumbnails */}
-              <div className="flex gap-2 sm:gap-3 items-center justify-center overflow-x-auto pb-2 scrollbar-none">
-                <button onClick={prevImage} className="text-slate-300 hover:text-blue-600 transition-colors p-1 hidden sm:block">
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-                <div className="flex gap-2 lg:gap-4">
-                  {productData.images.map((img, idx) => (
-                    <button 
-                      key={idx}
-                      onClick={() => setActiveImageIndex(idx)}
-                      className={`relative w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-[#f8fafc] border-2 transition-all p-1 ${activeImageIndex === idx ? 'border-blue-600 shadow-md ring-2 sm:ring-4 ring-blue-50' : 'border-slate-100 grayscale opacity-40 hover:opacity-100 hover:grayscale-0'}`}
-                    >
-                      <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-contain mix-blend-multiply" />
-                    </button>
-                  ))}
-                </div>
-                <button onClick={nextImage} className="text-slate-300 hover:text-blue-600 transition-colors p-1 hidden sm:block">
-                  <ChevronRight className="w-5 h-5" />
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -273,9 +226,9 @@ export default function PrecisionMistSprayerPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-slate-900 mb-4 px-4">
-              Endless <span className="text-blue-600">Possibilities.</span>
+              Precision <span className="text-blue-600">Applications.</span>
             </h2>
-            <p className="text-slate-400 font-bold uppercase tracking-widest text-[9px] sm:text-[10px]">Optimized for versatile liquid formulations</p>
+            <p className="text-slate-400 font-bold uppercase tracking-widest text-[9px] sm:text-[10px]">Engineered for high-end personal care and home branding</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -332,23 +285,23 @@ export default function PrecisionMistSprayerPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
             <div className="space-y-3 flex flex-col items-center sm:items-start text-center sm:text-left">
               <BarChart3 className="w-8 h-8 text-slate-300" />
-              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Weekly Output</h4>
+              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Weekly Capacity</h4>
               <p className="text-2xl sm:text-3xl font-black text-slate-900">{productData.capacity}</p>
             </div>
             <div className="space-y-3 flex flex-col items-center sm:items-start text-center sm:text-left">
               <Package className="w-8 h-8 text-slate-300" />
-              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Carton Units</h4>
-              <p className="text-2xl sm:text-3xl font-black text-slate-900">2,500 PCS</p>
+              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Standard Qty</h4>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">500 PCS/CTN</p>
             </div>
             <div className="space-y-3 flex flex-col items-center sm:items-start text-center sm:text-left">
               <Globe className="w-8 h-8 text-slate-300" />
               <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Origin Site</h4>
-              <p className="text-2xl sm:text-3xl font-black text-slate-900">Quzhou, CN</p>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">Zhejiang, CN</p>
             </div>
             <div className="space-y-3 flex flex-col items-center sm:items-start text-center sm:text-left">
               <CheckCircle2 className="w-8 h-8 text-blue-600" />
-              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Sample Unit</h4>
-              <p className="text-2xl sm:text-3xl font-black text-slate-900">FREE OFFER</p>
+              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Testing Samples</h4>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">AVAILABLE FREE</p>
             </div>
           </div>
         </div>
@@ -360,14 +313,14 @@ export default function PrecisionMistSprayerPage() {
           <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-10 lg:mb-20 gap-8 text-center lg:text-left">
             <div className="max-w-2xl px-4 sm:px-0">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tighter mb-4 sm:mb-6 leading-[0.9]">
-                <span className="text-blue-600 block mb-2 cursor-default">Philosophy.</span>
-                Zero-Defect
+                <span className="text-blue-600 block mb-2 cursor-default">Verification.</span>
+                1.0cc Precision
               </h2>
-              <p className="text-slate-500 text-sm sm:text-base lg:text-lg">Every single unit undergoes rigorous multi-stage verification before dispatch.</p>
+              <p className="text-slate-500 text-sm sm:text-base lg:text-lg">Every Trigger-Type D is verified for dosage consistency before warehouse entry.</p>
             </div>
             <div className="flex flex-wrap justify-center lg:justify-end gap-3 sm:gap-4">
-               <div className="px-4 sm:px-6 py-2.5 sm:py-3 border border-slate-200 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.3em]">ISO 9001:2015</div>
-               <div className="px-4 sm:px-6 py-2.5 sm:py-3 border border-slate-200 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.3em]">SGS CERTIFIED</div>
+               <div className="px-4 sm:px-6 py-2.5 sm:py-3 border border-slate-200 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.3em]">MILA INTERNAL QC</div>
+               <div className="px-4 sm:px-6 py-2.5 sm:py-3 border border-slate-200 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.3em]">SGS LAB READY</div>
             </div>
           </div>
 
@@ -375,7 +328,7 @@ export default function PrecisionMistSprayerPage() {
             {QC_STEPS.map((step, idx) => (
               <div key={idx} className="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
                 <div className="w-12 h-12 lg:w-16 lg:h-16 bg-blue-600 text-white flex items-center justify-center font-black text-xl lg:text-2xl mb-6 lg:mb-8">
-                  0{idx + 1}
+                   0{idx + 1}
                 </div>
                 <h4 className="text-lg lg:text-xl font-black uppercase tracking-tight mb-2 text-slate-900">{step.title}</h4>
                 <p className="text-slate-500 text-sm">{step.desc}</p>
@@ -383,49 +336,6 @@ export default function PrecisionMistSprayerPage() {
             ))}
             {/* Background Line */}
             <div className="hidden md:block absolute top-[24px] lg:top-[32px] left-0 w-full h-px bg-slate-100 -z-0"></div>
-          </div>
-        </div>
-      </section>
-
-      {/* Customization Grid */}
-      <section className="py-20 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-            <div className="space-y-10 lg:space-y-12">
-               <div className="text-center lg:text-left px-4 sm:px-0">
-                 <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter text-slate-900 mb-6">
-                   Tailored to <br /><span className="text-blue-600">Your Vision.</span>
-                 </h2>
-                 <p className="text-slate-500 text-base lg:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-                   From bespoke color matching to unique branding applications, we engineer the pump to align perfectly with your packaging aesthetics.
-                 </p>
-               </div>
-               
-               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-0">
-                 {productData.customization.map((item, idx) => (
-                   <div key={idx} className="space-y-3 flex flex-col items-center lg:items-start text-center lg:text-left">
-                     <div className="w-10 h-10 bg-slate-100 flex items-center justify-center">
-                        <Settings className="w-5 h-5 text-slate-400" />
-                     </div>
-                     <h4 className="text-sm font-black uppercase tracking-tight text-slate-900">{item.title}</h4>
-                     <p className="text-xs text-slate-500 leading-relaxed max-w-[200px] lg:max-w-none">{item.detail}</p>
-                   </div>
-                 ))}
-               </div>
-            </div>
-            <div className="relative px-4 sm:px-0">
-               <div className="aspect-[4/3] bg-slate-50 border border-slate-100 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/5 to-transparent"></div>
-                  <img 
-                    src={productData.images[0]} 
-                    alt="Customization" 
-                    className="w-2/3 lg:w-3/4 h-2/3 lg:h-3/4 object-contain opacity-20 grayscale"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-[8px] sm:text-[10px] font-black uppercase tracking-[1em] text-slate-300 vertical-text">CUSTOM CONFIGURATIONS</span>
-                  </div>
-               </div>
-            </div>
           </div>
         </div>
       </section>
@@ -466,53 +376,22 @@ export default function PrecisionMistSprayerPage() {
             </div>
 
             <div className="bg-white p-6 sm:p-12 text-slate-900 border border-slate-100 shadow-sm">
-              <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tighter mb-8 lg:mb-10 text-center lg:text-left">Manufacturing Excellence</h3>
+              <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tighter mb-8 lg:mb-10 text-center lg:text-left">Engineering Partnership</h3>
               <div className="space-y-10 lg:space-y-12">
                 {productData.manufacturing.map((m, idx) => (
                   <div key={idx} className="flex gap-4 lg:gap-6">
                     <div className="text-blue-600 font-black text-xl lg:text-2xl tracking-tighter">0{idx + 1}</div>
                     <div className="space-y-1 lg:space-y-2">
-                      <h4 className="text-base lg:text-lg font-black uppercase tracking-tight">{m.title}</h4>
-                      <p className="text-slate-500 text-sm leading-relaxed">{m.detail}</p>
+                       <h4 className="text-base lg:text-lg font-black uppercase tracking-tight">{m.title}</h4>
+                       <p className="text-slate-500 text-sm leading-relaxed">{m.detail}</p>
                     </div>
                   </div>
                 ))}
               </div>
               
               <div className="mt-12 lg:mt-20 pt-8 lg:pt-10 border-t border-slate-100 uppercase italic text-[9px] lg:text-[10px] tracking-[0.3em] text-slate-400 text-center lg:text-left">
-                Quality Guaranteed by MILA Industrial Standards
+                Trigger-Type D | Patented Precision Dispensing
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ & Support Section */}
-      <section className="py-20 lg:py-32 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 lg:px-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16 lg:mb-20">
-              <h2 className="text-3xl lg:text-4xl font-black uppercase tracking-tighter text-slate-900">Expert <span className="text-blue-600">Assistance.</span></h2>
-              <p className="text-[9px] lg:text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-4">Common questions about our dispensing solutions</p>
-            </div>
-            
-            <div className="space-y-4 lg:space-y-6">
-              {productData.faqs.map((faq, idx) => (
-                <div key={idx} className="bg-white p-6 lg:p-8 border border-slate-200">
-                  <h4 className="text-base sm:text-lg font-black uppercase tracking-tight text-slate-900 mb-3 lg:mb-4">{faq.q}</h4>
-                  <p className="text-slate-500 text-sm leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-16 lg:mt-20 p-8 lg:p-10 bg-white border-2 border-dashed border-slate-200 text-center">
-               <p className="text-slate-500 text-sm sm:text-base font-medium mb-6">Have a specific technical requirement or need a custom quote?</p>
-               <a 
-                href="mailto:sales@milaplastics.com"
-                className="inline-flex items-center gap-3 text-blue-600 font-black uppercase tracking-widest text-[10px] sm:text-xs border-b-2 border-blue-600 pb-1 hover:gap-6 transition-all"
-               >
-                 Consult with our Engineers <ChevronRight className="w-4 h-4" />
-               </a>
             </div>
           </div>
         </div>
@@ -521,22 +400,22 @@ export default function PrecisionMistSprayerPage() {
       {/* Call to Action */}
       <section className="py-20 lg:py-24 bg-white overflow-hidden relative border-t border-slate-100">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(black 1px, transparent 1px), linear-gradient(90deg, black 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
+           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(black 1px, transparent 1px), linear-gradient(90deg, black 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10 text-center">
-          <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter mb-8 lg:mb-12 italic leading-none">Ready to <span className="text-blue-600">Transform</span> Your Branding?</h2>
+          <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter mb-8 lg:mb-12 italic leading-none">Elevate Your <span className="text-blue-600">Brand</span> Experience.</h2>
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
             <a 
               href="mailto:sales@milaplastics.com" 
               className="px-8 lg:px-12 py-5 lg:py-6 bg-blue-600 text-white font-black text-xs lg:text-sm uppercase tracking-[0.3em] shadow-xl shadow-blue-600/20 hover:scale-105 transition-all w-full sm:w-auto"
             >
-              Request Quote
+              Get Best Price
             </a>
             <a 
               href="https://wa.me/8618567413851" 
               className="px-8 lg:px-12 py-5 lg:py-6 border-2 border-slate-900 text-slate-900 font-black text-xs lg:text-sm uppercase tracking-[0.3em] hover:bg-slate-900 hover:text-white transition-all w-full sm:w-auto"
             >
-              Consult Engineering
+              Chat for Samples
             </a>
           </div>
         </div>

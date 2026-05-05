@@ -93,5 +93,43 @@ export const products = [
     description: "Reinforced architectural trigger system with superior mechanical leverage for long-duration usage.",
     features: ["Balanced center of gravity", "Reinforced piston housing", "Anti-slip textured trigger"],
     imageSrc: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/a95aebb0-0e7c-4d99-a995-c215051add65.png"
+  },
+  {
+    id: "BT-10",
+    name: "Precision Bottle Trigger Sprayer",
+    category: "Trigger",
+    material: "PP",
+    description: "Fine Mist Trigger Spray Head 1.0cc Customizable. Precision Trigger-Type D deliverers exactly 1.0±0.1ml per spray, eliminating product waste.",
+    features: ["1.0cc Dosage", "Fine Mist Spray", "Plastic Spring", "28/400 & 28/410 Compatibility"],
+    imageSrc: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/Yellowtrigger.png",
+    price: "Negotiable",
+    moq: "10,000 PCS",
+    packaging: "500PCS/CTN (57*33*39cm)",
+    deliveryPeriod: "10-15 Days",
+    paymentMethod: "D/P, T/T",
+    supplyCapacity: "500,000 PCS/WEEK",
+    specs: {
+      dosage: "1.0±0.1ml",
+      sizes: "28/400, 28/410",
+      material: "PP",
+      spring: "Plastic",
+      origin: "Quzhou, Zhejiang, China"
+    },
+    detailedInfo: `
+      ### Laboratory-Grade Precision Dispensing
+      The Trigger-Type D spray head delivers exactly 1.0±0.1ml per spray, eliminating product waste and ensuring consistent application for superior brand quality.
+
+      ### Seamless Integrated Design
+      Features a seamless outer shell that provides a sleek modern appearance while improving durability and hygiene. The crevice-free design prevents residue buildup, making it ideal for skincare and cosmetic applications.
+
+      ### Customizable Spray Patterns
+      Choose from fine mist, stream, or adjustable spray patterns to match your product's consistency—perfect for facial mists, treatment sprays, or targeted applications.
+
+      ### Versatile Applications
+      - **Skincare & Cosmetics:** Facial mists, toners, setting sprays, makeup removers.
+      - **Personal Care:** Leave-in conditioners, body mists, hand sanitizers.
+      - **Home & Lifestyle:** Room sprays, linen mists, aromatherapy products.
+    `,
+    customPath: "/products/precision-bottle-trigger"
   }
 ];

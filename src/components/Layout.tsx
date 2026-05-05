@@ -39,27 +39,32 @@ export default function Layout({ children }: LayoutProps) {
       
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex justify-between items-center h-20">
-            <Link to="/" className="flex items-center gap-2 pl-[1px] ml-0 mb-0 mt-0 lg:mr-[-15px]">
+            <Link to="/" className="flex items-center gap-2 flex-shrink-0 transition-opacity hover:opacity-80">
               <img 
                 src="https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/166723e1-e79d-4b0d-b111-ac1545336904-modified.png" 
                 alt="Mila Plastics Logo" 
-                className="h-12 lg:h-16 w-auto object-contain"
+                className="h-10 sm:h-12 lg:h-14 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
-              <span className="font-black text-sm sm:text-base lg:text-xl tracking-tighter uppercase leading-none">
-                MILA <span className="text-blue-600 font-bold italic">PLASTICS</span>
-              </span>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-1.5">
+                <span className="font-black text-sm lg:text-lg tracking-tighter uppercase leading-none">
+                  MILA
+                </span>
+                <span className="text-blue-600 font-bold italic text-[10px] sm:text-xs lg:text-sm uppercase tracking-tighter leading-none">
+                  PLASTICS
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden md:flex items-center gap-4 lg:gap-8 text-[10px] lg:text-sm font-semibold text-slate-500 tracking-wide uppercase">
+            <div className="hidden lg:flex items-center gap-4 xl:gap-8 text-[11px] xl:text-xs font-black text-slate-500 tracking-widest uppercase">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   to={item.path}
-                  className="hover:text-blue-600 transition-colors"
+                  className={`hover:text-blue-600 transition-colors whitespace-nowrap ${location.pathname === item.path ? 'text-blue-600' : ''}`}
                 >
                   {item.label}
                 </Link>
@@ -67,8 +72,12 @@ export default function Layout({ children }: LayoutProps) {
             </div>
 
             {/* Mobile Toggle */}
-            <button className="md:hidden text-industrial-950" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X /> : <Menu />}
+            <button 
+              className="lg:hidden p-2 text-slate-900 active:bg-slate-50 transition-colors" 
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle Menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
@@ -80,7 +89,7 @@ export default function Layout({ children }: LayoutProps) {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-white border-b border-slate-100 overflow-hidden"
+              className="lg:hidden bg-white border-b border-slate-100 overflow-hidden"
             >
               <div className="p-6 flex flex-col gap-4">
                 {navItems.map((item) => (

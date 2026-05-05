@@ -24,8 +24,9 @@ async function startServer() {
       }
 
       const { GoogleGenAI } = await import("@google/genai");
-      const genAI = new GoogleGenAI(apiKey);
-      const model = genAI.getGenerativeModel({
+      const genAI = new GoogleGenAI({ apiKey: apiKey as string });
+      // @ts-ignore - Dynamic import typing issue
+      const model = (genAI as any).getGenerativeModel({
         model: "gemini-1.5-flash", 
         systemInstruction: `You are a friendly, helpful representative from the Mila Plastics engineering team. 
           Speak like a real person who deeply understands our industry and cares about the user's project.

@@ -56,7 +56,7 @@ export default function HomePage() {
               transition={{ duration: 0.8 }}
             >
               <div className="inline-block px-3 py-1 bg-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-8 text-white">Advanced Dispensing Systems</div>
-              <h1 className="text-4xl sm:text-6xl md:text-[8rem] font-black leading-[0.9] md:leading-[0.8] mb-8 md:mb-10 tracking-tighter uppercase">
+              <h1 className="text-4xl sm:text-6xl lg:text-[8rem] font-black leading-[0.9] lg:leading-[0.8] mb-8 md:mb-10 tracking-tighter uppercase">
                 <span className="text-blue-500">The No.1</span> <br />
                 <span className="text-white italic">Manufacturer.</span>
               </h1>
@@ -80,25 +80,25 @@ export default function HomePage() {
       </section>
 
       {/* Bottom Data Grid */}
-      <section className="border-t border-slate-200 bg-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 flex-shrink-0">
-        <div className="p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-slate-100">
-          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Daily Capacity</div>
-          <div className="text-2xl sm:text-3xl font-bold">550,000</div>
-          <div className="text-[10px] sm:text-xs text-slate-500">Units per 24h cycle</div>
+      <section className="border-t border-slate-200 bg-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 flex-shrink-0">
+        <div className="p-6 md:p-10">
+          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3 font-mono">Daily Capacity</div>
+          <div className="text-3xl sm:text-4xl font-black">550,000</div>
+          <div className="text-[10px] sm:text-xs text-slate-500 mt-1 uppercase font-bold opacity-60">Units per 24h cycle</div>
         </div>
-        <div className="p-6 md:p-8 border-b sm:border-b-0 md:border-r border-slate-100">
-          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Nozzle Variants</div>
-          <div className="text-2xl sm:text-3xl font-bold text-blue-600 italic">Stream/Spray</div>
-          <div className="text-[10px] sm:text-xs text-slate-500">Adjustable & Foamer Options</div>
+        <div className="p-6 md:p-10">
+          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3 font-mono">Nozzle Variants</div>
+          <div className="text-3xl sm:text-4xl font-black text-blue-600 italic">Stream/Spray</div>
+          <div className="text-[10px] sm:text-xs text-slate-500 mt-1 uppercase font-bold opacity-60">Adjustable & Foamer Options</div>
         </div>
-        <div className="p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-slate-100">
-          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Global Lead Time</div>
-          <div className="text-2xl sm:text-3xl font-bold">14 Days</div>
-          <div className="text-[10px] sm:text-xs text-slate-500">Express tooling available</div>
+        <div className="p-6 md:p-10">
+          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3 font-mono">Global Lead Time</div>
+          <div className="text-3xl sm:text-4xl font-black">14 Days</div>
+          <div className="text-[10px] sm:text-xs text-slate-500 mt-1 uppercase font-bold opacity-60">Express tooling available</div>
         </div>
-        <div className="p-6 md:p-8 bg-slate-900 text-white flex flex-col justify-center items-center text-center group cursor-pointer hover:bg-slate-800 transition-colors">
-          <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] font-bold mb-2 opacity-60">B2B Portal</div>
-          <div className="text-xs sm:text-sm font-semibold underline underline-offset-8 group-hover:opacity-80 transition-opacity">Wholesale Login →</div>
+        <div className="p-6 md:p-10 bg-slate-900 text-white flex flex-col justify-center items-center text-center group cursor-pointer hover:bg-slate-800 transition-colors">
+          <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] font-bold mb-3 opacity-40">B2B Portal Access</div>
+          <div className="text-sm font-black underline underline-offset-8 group-hover:text-blue-400 transition-colors uppercase tracking-widest">Wholesale Login →</div>
         </div>
       </section>
 
@@ -170,13 +170,13 @@ export default function HomePage() {
       {/* Facility Showcase Section */}
       <section className="py-20 md:py-24 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
-            <div className="md:col-span-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-8">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="relative h-[300px] sm:h-[400px] md:h-[500px] bg-slate-100 overflow-hidden border border-slate-200"
+                className="relative h-[300px] sm:h-[400px] lg:h-[500px] bg-slate-100 overflow-hidden border border-slate-200"
               >
                 <img 
                   src="https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/mmexport1777554925969.jpg"
@@ -189,13 +189,13 @@ export default function HomePage() {
                 </div>
               </motion.div>
             </div>
-            <div className="md:col-span-4">
-              <div className="space-y-6">
+            <div className="lg:col-span-4">
+              <div className="space-y-6 px-4 lg:px-0">
                 <div className="inline-block px-3 py-1 bg-slate-900 text-white text-[9px] font-black uppercase tracking-[0.3em]">Manufacturing Capacity</div>
                 <h3 className="text-4xl font-black uppercase leading-none tracking-tighter">
                   Industrial <br />Powerhouse.
                 </h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed max-w-md">
                   Our core facility leverages top-tier robotics and 24/7 monitoring systems to ensure consistency across every single production run. From raw polymer to final QC, we own the entire value chain.
                 </p>
                 <div className="flex gap-8 pt-6">
@@ -215,16 +215,16 @@ export default function HomePage() {
       </section>
 
       {/* Technology Content Section */}
-      <section id="technology" className="py-32 bg-white relative overflow-hidden">
+      <section id="technology" className="py-24 lg:py-32 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-industrial-100 -z-10 rounded-full blur-3xl opacity-50"></div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="relative z-10 border-[12px] border-slate-50"
+                className="relative z-10 border-[8px] sm:border-[12px] border-slate-50"
               >
                 <img
                   src="https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/ebd03adf-216f-469f-8cde-0448b7be6b52.png"
@@ -235,15 +235,15 @@ export default function HomePage() {
               </motion.div>
             </div>
 
-            <div className="space-y-10 order-2 md:order-none">
-              <div className="px-4 md:px-0">
+            <div className="space-y-10 order-2 lg:order-none">
+              <div className="px-4 lg:px-0">
                 <span className="text-[10px] sm:text-xs font-black uppercase tracking-[0.4em] text-industrial-500 mb-4 block">Manufacturing Excellence</span>
-                <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight uppercase tracking-tighter">
+                <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight uppercase tracking-tighter">
                   Where Science <br />Meets Synthesis
                 </h2>
               </div>
               
-              <div className="space-y-6 sm:space-y-8 px-4 md:px-0">
+              <div className="space-y-6 sm:space-y-8 px-4 lg:px-0">
                 {[
                   {
                     title: "Medical-Grade Environment",

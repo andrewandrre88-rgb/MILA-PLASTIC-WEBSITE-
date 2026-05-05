@@ -68,11 +68,11 @@ export default function MilaAi() {
               opacity: 1, 
               y: 0, 
               scale: 1,
-              height: isMinimized ? "64px" : "min(500px, 70vh)",
+              height: isMinimized ? "64px" : "min(500px, 80vh)",
             }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
-            className="bg-white border border-slate-200 shadow-2xl rounded-2xl flex flex-col overflow-hidden mb-4 w-[calc(100vw-2rem)] sm:w-[380px]"
+            className="bg-white border border-slate-200 shadow-2xl rounded-2xl flex flex-col overflow-hidden mb-4 w-[calc(100vw-2rem)] sm:w-[380px] max-h-[85vh]"
           >
             {/* Header */}
             <div className="bg-slate-900 p-4 flex items-center justify-between">
