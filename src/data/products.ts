@@ -131,5 +131,46 @@ export const products = [
       - **Home & Lifestyle:** Room sprays, linen mists, aromatherapy products.
     `,
     customPath: "/products/precision-bottle-trigger"
+  },
+  {
+    id: "LP-20",
+    name: "Clip Lock Lotion Pump",
+    category: "Lotion",
+    material: "PP",
+    description: "Premium clip-lock dispensing system for hand wash and sanitizer. Engineered for precise 1.0ml dosage with 360° travel security.",
+    features: ["Precision 1.0ml Output", "Integrated Travel Clip Lock", "10,000+ Actuation Life", "Chemical-Resistant PP"],
+    imageSrc: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/0487069b-862d-488e-85c2-490d1238a8c2.png",
+    price: "Negotiable",
+    moq: "10,000 PCS",
+    packaging: "1000PCS/CTN (57*33*39cm)",
+    deliveryPeriod: "10-15 Days",
+    paymentMethod: "T/T, D/P",
+    supplyCapacity: "3,000,000 PCS/WEEK",
+    specs: {
+      dosage: "1.0±0.1ml",
+      sizes: "24/410, 28/410, 32/410",
+      material: "PP",
+      spring: "Tension-Optimized",
+      origin: "Quzhou, Zhejiang, China"
+    },
+    detailedInfo: `
+      ### Premium clip-lock dispensing system
+      The PP 24/410 Replacement Pump is a premium clip-lock dispensing system designed to upgrade personal care, cosmetic, and household product packaging. Provides a consistent, luxurious user experience while ensuring precise, waste-free application.
+
+      ### Integrated 360° Travel Lock
+      Features a robust twist-to-lock mechanism and a secondary clip-lock to prevent accidental dispensing during transit. Ideal for high-end travel kits and shared hospitality environments.
+
+      ### Performance & Reliability
+      - **Dosage Accuracy:** 1.0ml ± 0.1ml per actuation for formula cost control.
+      - **Cycle Life:** Exceeds 10,000 full actuations without mechanical failure.
+      - **Leak Protection:** Passes 72-hour inverted leak testing for mail-order security.
+      - **Chemical Resistance:** Compatible with pH 3-10 solutions, alcohols, and oils.
+
+      ### Versatile Applications
+      - **Personal Care:** Hand soaps, facial cleansers, body mists.
+      - **Skin Care:** Body lotions, moisturizing creams, serums.
+      - **Professional:** Bulk sanitizer refills for commercial hospitality.
+    `,
+    customPath: "/products/clip-lock-lotion-pump"
   }
 ];

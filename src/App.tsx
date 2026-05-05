@@ -17,6 +17,7 @@ import RealUseCasesPage from "./pages/RealUseCasesPage";
 import SocialMediaPage from "./pages/SocialMediaPage";
 import PrecisionMistSprayerPage from "./pages/PrecisionMistSprayerPage";
 import PrecisionBottleTriggerPage from "./pages/PrecisionBottleTriggerPage";
+import ClipLockLotionPumpPage from "./pages/ClipLockLotionPumpPage";
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/social-media" element={<SocialMediaPage />} />
           <Route path="/precision-mist-sprayer" element={<PrecisionMistSprayerPage />} />
           <Route path="/products/precision-bottle-trigger" element={<PrecisionBottleTriggerPage />} />
+          <Route path="/products/clip-lock-lotion-pump" element={<ClipLockLotionPumpPage />} />
         </Routes>
       </Layout>
     </Router>

@@ -22,7 +22,8 @@ const productData = {
   name: "Precision Bottle Trigger Sprayer",
   subtitle: "Fine Mist Trigger Spray Head 1.0cc Customizable (Type D)",
   images: [
-    "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/Yellowtrigger.png"
+    "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/Yellowtrigger.png",
+    "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/Yellowtrigger2.png"
   ],
   moq: "10,000 PCS",
   price: "Negotiable",
@@ -186,36 +187,68 @@ export default function PrecisionBottleTriggerPage() {
             </motion.div>
 
             <div className="flex flex-col gap-6 lg:gap-8 order-1 lg:order-2">
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="relative aspect-square bg-[#f8fafc] flex items-center justify-center p-4 sm:p-8 lg:p-12 border border-slate-100 group overflow-hidden"
-              >
-                <div className="absolute top-4 right-4 lg:top-10 lg:right-10 flex gap-2 lg:gap-4 z-10">
-                   <div className="w-8 h-8 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
-                      <Droplets className="w-4 h-4 lg:w-6 lg:h-6 text-blue-600" />
-                   </div>
-                   <div className="w-8 h-8 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
-                      <Microscope className="w-4 h-4 lg:w-6 lg:h-6 text-slate-900" />
-                   </div>
-                </div>
+              <div className="space-y-4">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="relative aspect-square bg-[#f8fafc] flex items-center justify-center p-4 sm:p-8 lg:p-12 border border-slate-100 group overflow-hidden"
+                >
+                  <div className="absolute top-4 right-4 lg:top-10 lg:right-10 flex gap-2 lg:gap-4 z-10">
+                    <div className="w-8 h-8 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
+                        <Droplets className="w-4 h-4 lg:w-6 lg:h-6 text-blue-600" />
+                    </div>
+                    <div className="w-8 h-8 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
+                        <Microscope className="w-4 h-4 lg:w-6 lg:h-6 text-slate-900" />
+                    </div>
+                  </div>
 
-                <AnimatePresence mode="wait">
-                  <motion.img 
-                    key={activeImageIndex}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    src={productData.images[activeImageIndex]} 
-                    alt={productData.name}
-                    className="w-full h-full object-contain mix-blend-multiply"
-                  />
-                </AnimatePresence>
+                  <AnimatePresence mode="wait">
+                    <motion.img 
+                      key={activeImageIndex}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 1.1 }}
+                      transition={{ duration: 0.4, ease: "circOut" }}
+                      src={productData.images[activeImageIndex]} 
+                      alt={productData.name}
+                      className="w-full h-full object-contain mix-blend-multiply"
+                    />
+                  </AnimatePresence>
 
-                <div className="absolute bottom-6 left-6 lg:bottom-10 lg:left-10">
-                  <p className="text-[10px] font-black text-slate-300 uppercase tracking-[0.5em] vertical-text">SERIAL: TYPE-D-1.0CC</p>
+                  {/* Carousel Controls */}
+                  <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <button 
+                      onClick={() => setActiveImageIndex((prev) => (prev > 0 ? prev - 1 : productData.images.length - 1))}
+                      className="w-10 h-10 bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center hover:bg-white transition-colors"
+                    >
+                      <ChevronLeft size={20} />
+                    </button>
+                    <button 
+                      onClick={() => setActiveImageIndex((prev) => (prev < productData.images.length - 1 ? prev + 1 : 0))}
+                      className="w-10 h-10 bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center hover:bg-white transition-colors"
+                    >
+                      <ChevronRight size={20} />
+                    </button>
+                  </div>
+
+                  <div className="absolute bottom-6 left-6 lg:bottom-10 lg:left-10">
+                    <p className="text-[10px] font-black text-slate-300 uppercase tracking-[0.5em] vertical-text">SERIAL: TYPE-D-1.0CC</p>
+                  </div>
+                </motion.div>
+
+                {/* Thumbnails */}
+                <div className="flex justify-center lg:justify-start gap-4">
+                  {productData.images.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setActiveImageIndex(idx)}
+                      className={`w-20 h-20 border-2 transition-all p-2 bg-slate-50 ${activeImageIndex === idx ? 'border-blue-600' : 'border-transparent hover:border-slate-200'}`}
+                    >
+                      <img src={img} alt="thumbnail" className="w-full h-full object-contain mix-blend-multiply" />
+                    </button>
+                  ))}
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
