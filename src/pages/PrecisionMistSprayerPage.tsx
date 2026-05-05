@@ -136,7 +136,7 @@ export default function PrecisionMistSprayerPage() {
                 <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 font-black text-[10px] uppercase tracking-widest rounded-full">
                   Advanced Dispensing System
                 </span>
-                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black uppercase tracking-tighter text-slate-900 leading-[0.95]">
+                <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black uppercase tracking-tighter text-slate-900 leading-[0.95]">
                   Precision <br className="hidden lg:block" />
                   <span className="text-blue-600">0.1cc Mist.</span>
                 </h1>
@@ -357,13 +357,13 @@ export default function PrecisionMistSprayerPage() {
       {/* Quality Control Flow */}
       <section className="py-20 lg:py-32 bg-white text-slate-900 overflow-hidden border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-16 lg:mb-20 gap-8 text-center lg:text-left">
-            <div className="max-w-2xl">
-              <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter mb-6 leading-[0.9]">
+          <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-10 lg:mb-20 gap-8 text-center lg:text-left">
+            <div className="max-w-2xl px-4 sm:px-0">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tighter mb-4 sm:mb-6 leading-[0.9]">
                 <span className="text-blue-600 block mb-2 cursor-default">Philosophy.</span>
                 Zero-Defect
               </h2>
-              <p className="text-slate-500 text-base lg:text-lg">Every single unit undergoes rigorous multi-stage verification before dispatch.</p>
+              <p className="text-slate-500 text-sm sm:text-base lg:text-lg">Every single unit undergoes rigorous multi-stage verification before dispatch.</p>
             </div>
             <div className="flex flex-wrap justify-center lg:justify-end gap-3 sm:gap-4">
                <div className="px-4 sm:px-6 py-2.5 sm:py-3 border border-slate-200 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.3em]">ISO 9001:2015</div>
@@ -433,8 +433,8 @@ export default function PrecisionMistSprayerPage() {
       {/* Full Specs Table */}
       <section id="specs" className="py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="mb-16 lg:mb-20 text-center lg:text-left">
-            <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter text-slate-900">The <span className="text-blue-600">Full Spec.</span></h2>
+          <div className="mb-12 sm:mb-16 lg:mb-20 text-center lg:text-left px-4 sm:px-0">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-slate-900">The <span className="text-blue-600">Full Spec.</span></h2>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
@@ -524,7 +524,7 @@ export default function PrecisionMistSprayerPage() {
           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(black 1px, transparent 1px), linear-gradient(90deg, black 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10 text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter mb-8 lg:mb-12 italic leading-none">Ready to <span className="text-blue-600">Transform</span> Your Branding?</h2>
+          <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter mb-8 lg:mb-12 italic leading-none">Ready to <span className="text-blue-600">Transform</span> Your Branding?</h2>
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
             <a 
               href="mailto:sales@milaplastics.com" 

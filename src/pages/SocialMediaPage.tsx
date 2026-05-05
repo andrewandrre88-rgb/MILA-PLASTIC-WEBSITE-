@@ -106,26 +106,26 @@ export default function SocialMediaPage() {
           <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0f1a] via-transparent to-[#0a0f1a]"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-10 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10 relative z-10">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-block px-4 py-1.5 bg-[#1d4ed8] text-white text-[11px] font-black uppercase tracking-[0.2em] mb-10">
+            <div className="inline-block px-4 py-1.5 bg-[#1d4ed8] text-white text-[10px] sm:text-[11px] font-black uppercase tracking-[0.2em] mb-8 md:mb-10">
               Social Ecosystem
             </div>
             
-            <h1 className="flex flex-col mb-10">
-              <span className="text-[12vw] md:text-[140px] font-black text-[#3b82f6] uppercase tracking-tighter leading-[0.8] mb-2">
+            <h1 className="flex flex-col mb-10 overflow-hidden leading-[1.05]">
+              <span className="text-[12vw] sm:text-[10vw] md:text-[140px] font-black text-[#3b82f6] uppercase tracking-tighter leading-[0.8] mb-2">
                 Mila Social
               </span>
-              <span className="text-[12vw] md:text-[140px] font-black text-white uppercase tracking-tighter leading-[0.8] italic">
+              <span className="text-[12vw] sm:text-[10vw] md:text-[140px] font-black text-white uppercase tracking-tighter leading-[0.8] italic">
                 Insights.
               </span>
             </h1>
             
-            <p className="text-slate-400 text-lg md:text-2xl max-w-2xl font-medium leading-relaxed opacity-80">
+            <p className="text-slate-400 text-base sm:text-lg md:text-2xl max-w-2xl font-medium leading-relaxed opacity-80 px-2 sm:px-0">
               Explore our global digital footprint, from industrial-grade manufacturing updates to real-time engineering insights.
             </p>
           </motion.div>
@@ -133,9 +133,9 @@ export default function SocialMediaPage() {
       </section>
 
       {/* Primary Channels */}
-      <section className="py-24 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <section className="py-20 lg:py-24 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {socialChannels.map((channel, index) => (
               <motion.a
                 key={channel.name}
@@ -166,21 +166,21 @@ export default function SocialMediaPage() {
       </section>
 
       {/* Curated Feed */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+      <section className="py-20 lg:py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6 px-2 sm:px-0">
             <div className="max-w-xl">
-              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-tight mb-4 text-slate-900">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-tight mb-4 text-slate-900">
                 Latest <span className="text-blue-600">Updates.</span>
               </h2>
-              <p className="text-slate-500 font-bold tracking-widest text-xs uppercase">Curated highlights from across our digital platforms.</p>
+              <p className="text-slate-500 font-bold tracking-widest text-[10px] sm:text-xs uppercase">Curated highlights from across our digital platforms.</p>
             </div>
             <div className="flex gap-4">
-               <button className="px-6 py-3 bg-white border border-slate-200 text-slate-900 font-black uppercase text-[10px] tracking-widest hover:bg-slate-900 hover:text-white transition-all">View All Posts</button>
+               <button className="px-6 py-3 bg-white border border-slate-200 text-slate-900 font-black uppercase text-[10px] tracking-widest hover:bg-slate-900 hover:text-white transition-all w-full sm:w-auto">View All Posts</button>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             {feedItems.map((item, index) => (
               <motion.div
                 key={item.id}
@@ -216,25 +216,25 @@ export default function SocialMediaPage() {
       </section>
 
       {/* Newsletter / CTA */}
-      <section className="py-32 bg-blue-600 relative overflow-hidden">
+      <section className="py-24 lg:py-32 bg-blue-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         </div>
-        <div className="max-w-4xl mx-auto px-10 relative z-10 text-center">
-          <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-8 leading-none">
+        <div className="max-w-4xl mx-auto px-4 sm:px-10 relative z-10 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-8 sm:mb-12 leading-tight">
             Don't miss a <br />single <span className="italic">innovation.</span>
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
             <input 
               type="email" 
               placeholder="ENTER YOUR EMAIL" 
-              className="flex-1 bg-white/10 border border-white/20 px-6 py-4 text-white placeholder:text-white/40 font-bold tracking-widest uppercase text-xs focus:outline-none focus:bg-white/20 transition-all"
+              className="flex-1 bg-white/10 border border-white/20 px-6 py-4 text-white placeholder:text-white/40 font-bold tracking-widest uppercase text-[10px] sm:text-xs focus:outline-none focus:bg-white/20 transition-all"
             />
-            <button className="bg-white text-blue-600 px-8 py-4 font-black uppercase tracking-widest text-xs hover:bg-slate-900 hover:text-white transition-all">
+            <button className="bg-white text-blue-600 px-8 py-4 font-black uppercase tracking-widest text-[10px] sm:text-xs hover:bg-slate-900 hover:text-white transition-all">
               Subscribe
             </button>
           </div>
-          <p className="mt-8 text-white/60 text-[10px] font-bold uppercase tracking-[0.2em]">Weekly industry digest. No spam, just precision.</p>
+          <p className="mt-8 text-white/60 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em]">Weekly industry digest. No spam, just precision.</p>
         </div>
       </section>
     </main>

@@ -39,7 +39,7 @@ export default function QualityControlPage() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-20 lg:py-32 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 architectural-grid"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-10 relative z-10">
           <motion.div
@@ -48,11 +48,11 @@ export default function QualityControlPage() {
             className="max-w-3xl"
           >
             <div className="inline-block px-3 py-1 bg-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-6 text-white">Standards of Excellence</div>
-            <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] mb-8">
+            <h1 className="text-4xl sm:text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.9] md:leading-[0.8] mb-8">
               <span className="text-blue-500">Quality</span> <br />
               <span className="text-white italic">Control.</span>
             </h1>
-            <p className="text-slate-400 text-xl leading-relaxed">
+            <p className="text-slate-400 text-lg sm:text-xl leading-relaxed max-w-2xl px-2 sm:px-0">
               We maintain a rigorous, multi-stage quality control system to ensure every order meets the highest standards of quality and consistency.
             </p>
           </motion.div>
@@ -103,10 +103,10 @@ export default function QualityControlPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-24 p-12 bg-slate-900 text-white border-l-8 border-blue-600"
+            className="mt-24 p-8 sm:p-12 bg-slate-900 text-white border-l-8 border-blue-600"
           >
-            <h3 className="text-2xl font-black uppercase tracking-tighter mb-6 underline decoration-blue-600 decoration-4 underline-offset-8">Our Commitment</h3>
-            <p className="text-slate-400 text-lg leading-relaxed max-w-4xl">
+            <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tighter mb-6 underline decoration-blue-600 decoration-4 underline-offset-8">Our Commitment</h3>
+            <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-4xl">
               Quality is integrated into every step. We are your reliable manufacturing partner, ensuring that the products you receive are precisely as specified and of the quality your brand deserves.
             </p>
           </motion.div>

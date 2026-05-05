@@ -56,21 +56,21 @@ export default function HomePage() {
               transition={{ duration: 0.8 }}
             >
               <div className="inline-block px-3 py-1 bg-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-8 text-white">Advanced Dispensing Systems</div>
-              <h1 className="text-[4rem] md:text-[8rem] font-black leading-[0.8] mb-10 tracking-tighter uppercase">
+              <h1 className="text-4xl sm:text-6xl md:text-[8rem] font-black leading-[0.9] md:leading-[0.8] mb-8 md:mb-10 tracking-tighter uppercase">
                 <span className="text-blue-500">The No.1</span> <br />
                 <span className="text-white italic">Manufacturer.</span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-slate-400 mb-12 max-w-lg leading-relaxed font-medium">
+              <p className="text-lg md:text-2xl text-slate-400 mb-10 md:mb-12 max-w-lg leading-relaxed font-medium">
                 of Liquid Dispensing Systems in China.
               </p>
               
-              <div className="flex flex-wrap gap-4 pt-10 border-t border-white/10">
-                <button className="px-10 py-5 bg-blue-600 text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all active:scale-95 flex items-center gap-3 shadow-2xl shadow-blue-600/20">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-10 border-t border-white/10">
+                <button className="px-6 sm:px-10 py-4 sm:py-5 bg-blue-600 text-white font-bold text-xs sm:text-sm uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all active:scale-95 flex items-center justify-center gap-3 shadow-2xl shadow-blue-600/20 w-full sm:w-auto">
                   Request Data Portal
                   <ArrowRight className="w-4 h-4" />
                 </button>
-                <Link to="/products" className="px-10 py-5 border-2 border-white/20 text-white font-bold text-sm uppercase tracking-widest hover:bg-white/10 transition-all active:scale-95 text-center">
+                <Link to="/products" className="px-6 sm:px-10 py-4 sm:py-5 border-2 border-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-widest hover:bg-white/10 transition-all active:scale-95 text-center w-full sm:w-auto">
                   Full Inventory
                 </Link>
               </div>
@@ -80,25 +80,25 @@ export default function HomePage() {
       </section>
 
       {/* Bottom Data Grid */}
-      <section className="border-t border-slate-200 bg-white grid grid-cols-2 md:grid-cols-4 flex-shrink-0">
-        <div className="p-8 border-r border-slate-100">
-          <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Daily Capacity</div>
-          <div className="text-3xl font-bold">550,000</div>
-          <div className="text-xs text-slate-500">Units per 24h cycle</div>
+      <section className="border-t border-slate-200 bg-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 flex-shrink-0">
+        <div className="p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-slate-100">
+          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Daily Capacity</div>
+          <div className="text-2xl sm:text-3xl font-bold">550,000</div>
+          <div className="text-[10px] sm:text-xs text-slate-500">Units per 24h cycle</div>
         </div>
-        <div className="p-8 border-r border-slate-100">
-          <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Nozzle Variants</div>
-          <div className="text-3xl font-bold text-blue-600 italic">Stream/Spray</div>
-          <div className="text-xs text-slate-500">Adjustable & Foamer Options</div>
+        <div className="p-6 md:p-8 border-b sm:border-b-0 md:border-r border-slate-100">
+          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Nozzle Variants</div>
+          <div className="text-2xl sm:text-3xl font-bold text-blue-600 italic">Stream/Spray</div>
+          <div className="text-[10px] sm:text-xs text-slate-500">Adjustable & Foamer Options</div>
         </div>
-        <div className="p-8 border-r border-slate-100">
-          <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Global Lead Time</div>
-          <div className="text-3xl font-bold">14 Days</div>
-          <div className="text-xs text-slate-500">Express tooling available</div>
+        <div className="p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-slate-100">
+          <div className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 font-mono">Global Lead Time</div>
+          <div className="text-2xl sm:text-3xl font-bold">14 Days</div>
+          <div className="text-[10px] sm:text-xs text-slate-500">Express tooling available</div>
         </div>
-        <div className="p-8 bg-slate-900 text-white flex flex-col justify-center items-center text-center group cursor-pointer hover:bg-slate-800 transition-colors">
-          <div className="text-[10px] uppercase tracking-[0.3em] font-bold mb-2 opacity-60">B2B Portal</div>
-          <div className="text-sm font-semibold underline underline-offset-8 group-hover:opacity-80 transition-opacity">Wholesale Login →</div>
+        <div className="p-6 md:p-8 bg-slate-900 text-white flex flex-col justify-center items-center text-center group cursor-pointer hover:bg-slate-800 transition-colors">
+          <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] font-bold mb-2 opacity-60">B2B Portal</div>
+          <div className="text-xs sm:text-sm font-semibold underline underline-offset-8 group-hover:opacity-80 transition-opacity">Wholesale Login →</div>
         </div>
       </section>
 
@@ -170,13 +170,13 @@ export default function HomePage() {
       {/* Facility Showcase Section */}
       <section className="py-20 md:py-24 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-10">
-          <div className="grid md:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
             <div className="md:col-span-8">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="relative h-[500px] bg-slate-100 overflow-hidden border border-slate-200"
+                className="relative h-[300px] sm:h-[400px] md:h-[500px] bg-slate-100 overflow-hidden border border-slate-200"
               >
                 <img 
                   src="https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/mmexport1777554925969.jpg"
@@ -235,15 +235,15 @@ export default function HomePage() {
               </motion.div>
             </div>
 
-            <div className="space-y-10">
-              <div>
-                <span className="text-xs font-black uppercase tracking-[0.4em] text-industrial-500 mb-4 block">Manufacturing Excellence</span>
-                <h2 className="text-5xl md:text-6xl font-bold leading-tight uppercase tracking-tighter">
+            <div className="space-y-10 order-2 md:order-none">
+              <div className="px-4 md:px-0">
+                <span className="text-[10px] sm:text-xs font-black uppercase tracking-[0.4em] text-industrial-500 mb-4 block">Manufacturing Excellence</span>
+                <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight uppercase tracking-tighter">
                   Where Science <br />Meets Synthesis
                 </h2>
               </div>
               
-              <div className="space-y-8">
+              <div className="space-y-6 sm:space-y-8 px-4 md:px-0">
                 {[
                   {
                     title: "Medical-Grade Environment",
@@ -319,18 +319,18 @@ export default function HomePage() {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="order-1 lg:order-2 space-y-8"
+              className="order-1 lg:order-2 space-y-6 sm:space-y-8"
             >
               <div className="inline-block px-3 py-1 bg-slate-900 text-white text-[9px] font-black uppercase tracking-[0.3em]">Internal Architecture</div>
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.95] md:leading-[0.9]">
                 Molecular <br />
                 <span className="text-[#0066FF] italic">Precision.</span>
               </h2>
-              <p className="text-slate-600 text-lg leading-relaxed max-w-lg">
+              <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-lg">
                 The soul of our trigger systems lies in the internal sub-assemblies. Utilizing a proprietary blend of high-density polymers, each spring, valve, and gasket is engineered to withstand extreme chemical environments and repeated mechanical stress.
               </p>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="p-6 bg-white border border-slate-200">
                   <h4 className="text-sm font-black uppercase mb-2 tracking-tight">Zero-Stress Molding</h4>
                   <p className="text-slate-500 text-xs leading-relaxed">Advanced cooling cycles prevent internal warping, ensuring microns-level accuracy across millions of units.</p>

@@ -29,7 +29,7 @@ export default function TeamPage() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-20 lg:py-32 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 architectural-grid"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-10 relative z-10">
           <motion.div
@@ -38,11 +38,11 @@ export default function TeamPage() {
             className="max-w-3xl"
           >
             <div className="inline-block px-3 py-1 bg-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-6 text-white">Our People</div>
-            <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] mb-8">
+            <h1 className="text-4xl sm:text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.9] md:leading-[0.8] mb-8">
               <span className="text-blue-500">Expert</span> <br />
               <span className="text-white italic">Craftsmanship.</span>
             </h1>
-            <p className="text-slate-400 text-xl leading-relaxed">
+            <p className="text-slate-400 text-lg sm:text-xl leading-relaxed max-w-2xl px-2 sm:px-0">
               Our team consists of 350+ experienced and passionate professionals dedicated to unwavering quality.
             </p>
           </motion.div>
@@ -79,13 +79,13 @@ export default function TeamPage() {
       </section>
 
       {/* Team Values */}
-      <section className="py-24 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-12">
+      <section className="py-20 lg:py-24 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10">
+          <div className="max-w-2xl px-4 sm:px-0">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-10 sm:mb-12">
               Driven by <span className="text-blue-600 italic">Philosophy.</span>
             </h2>
-            <div className="grid sm:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10">
               <div>
                 <Rocket className="w-5 h-5 text-blue-600 mb-4" />
                 <h4 className="text-xs font-black uppercase tracking-widest mb-3">Innovation Driver</h4>

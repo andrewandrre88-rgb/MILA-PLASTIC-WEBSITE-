@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { 
   X, 
   Menu, 
@@ -74,24 +74,30 @@ export default function Layout({ children }: LayoutProps) {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="md:hidden bg-white border-b border-slate-100 p-6 flex flex-col gap-6"
-          >
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                to={item.path}
-                className="text-lg font-black uppercase tracking-tighter text-slate-900 border-b border-slate-50 pb-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </motion.div>
-        )}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden bg-white border-b border-slate-100 overflow-hidden"
+            >
+              <div className="p-6 flex flex-col gap-4">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.label}
+                    to={item.path}
+                    className="text-lg font-black uppercase tracking-tighter text-slate-900 border-b border-slate-50 pb-2 flex justify-between items-center group"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                    <ArrowRight className="w-4 h-4 text-blue-600 opacity-0 group-active:opacity-100 transition-opacity" />
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
 
       <main className="pt-20">
@@ -99,10 +105,10 @@ export default function Layout({ children }: LayoutProps) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white pt-20 md:pt-24 pb-12 border-t border-slate-200">
+      <footer className="bg-white pt-16 md:pt-24 pb-12 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-10">
-          <div className="grid md:grid-cols-4 gap-16 mb-20">
-            <div className="md:col-span-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-y-12 gap-x-8 mb-20 lg:mb-32">
+            <div className="sm:col-span-2 lg:col-span-1">
               <div className="flex items-center gap-2 mb-8">
                 <img 
                   src="https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/166723e1-e79d-4b0d-b111-ac1545336904-modified.png" 
@@ -199,8 +205,8 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
 
-          <div className="flex justify-between items-center pt-8 border-t border-slate-100">
-            <span className="text-[9px] font-black text-slate-300 uppercase tracking-[0.4em]">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-slate-100">
+            <span className="text-[8px] sm:text-[9px] font-black text-slate-300 uppercase tracking-[0.4em] text-center sm:text-left">
               © 2024 MILA PLASTICS LTD. STANDARDS OF EXCELLENCE.
             </span>
           </div>

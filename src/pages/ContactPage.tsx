@@ -20,7 +20,7 @@ export default function ContactPage() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-20 lg:py-32 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 architectural-grid"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-10 relative z-10 text-center md:text-left">
           <motion.div
@@ -29,11 +29,11 @@ export default function ContactPage() {
             className="max-w-3xl"
           >
             <div className="inline-block px-3 py-1 bg-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-6 text-white">Direct Channel</div>
-            <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] mb-8">
+            <h1 className="text-4xl sm:text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.9] md:leading-[0.8] mb-8">
               <span className="text-blue-500">Connect with</span> <br />
               <span className="text-white italic">Engineering.</span>
             </h1>
-            <p className="text-slate-400 text-xl leading-relaxed max-w-2xl">
+            <p className="text-slate-400 text-lg sm:text-xl leading-relaxed max-w-2xl px-2 sm:px-0">
               From custom tooling specifications to global supply chain logistics, our technical sales team is ready to scale your production.
             </p>
           </motion.div>
@@ -46,13 +46,13 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-24">
             
             {/* Left: Contact Info */}
-            <div className="space-y-16">
-              <div>
-                <h2 className="text-3xl font-black uppercase tracking-tighter mb-12 flex items-center gap-4">
+            <div className="space-y-12 sm:space-y-16">
+              <div className="px-4 md:px-0">
+                <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tighter mb-8 sm:mb-12 flex items-center gap-4">
                    Global Hubs
                    <div className="h-px flex-grow bg-slate-100"></div>
                 </h2>
-                <div className="grid sm:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-12">
                    <div className="space-y-4">
                       <div className="text-[10px] font-black uppercase tracking-widest text-blue-600">Headquarters</div>
                       <h3 className="text-xl font-black uppercase tracking-tight">Main Campus</h3>

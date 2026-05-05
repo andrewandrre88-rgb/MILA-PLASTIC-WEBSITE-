@@ -33,7 +33,7 @@ export default function QualityCertificationPage() {
   return (
     <div className="bg-white">
       {/* Hero Header */}
-      <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-20 lg:py-32 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 architectural-grid"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-10 relative z-10">
           <motion.div
@@ -42,11 +42,11 @@ export default function QualityCertificationPage() {
             className="max-w-3xl"
           >
             <div className="inline-block px-3 py-1 bg-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-6">Compliance & Trust</div>
-            <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] mb-8">
+            <h1 className="text-4xl sm:text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.9] md:leading-[0.8] mb-8">
               <span className="text-blue-500">Quality &</span> <br />
               <span className="text-white italic">Certification.</span>
             </h1>
-            <p className="text-slate-400 text-xl leading-relaxed">
+            <p className="text-slate-400 text-lg sm:text-xl leading-relaxed max-w-2xl px-2 sm:px-0">
               Global manufacturing excellence backed by international standard verification and a relentless pursuit of engineering perfection.
             </p>
           </motion.div>
@@ -88,20 +88,20 @@ export default function QualityCertificationPage() {
       </section>
 
       {/* Patents Section */}
-      <section className="py-24 border-t border-slate-100">
+      <section className="py-20 lg:py-24 border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-10">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-            <div className="max-w-2xl">
+          <div className="flex flex-col md:flex-row justify-between md:items-end mb-12 sm:mb-16 gap-8">
+            <div className="max-w-2xl px-2 sm:px-0">
               <div className="inline-block px-3 py-1 bg-slate-900 text-white text-[9px] font-black uppercase tracking-[0.3em] mb-6">Original Engineering</div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">
                 Patented <span className="text-blue-600 italic">Innovation.</span>
               </h2>
-              <p className="text-slate-500 text-sm uppercase tracking-widest font-bold opacity-60">
+              <p className="text-slate-500 text-[10px] sm:text-xs uppercase tracking-widest font-bold opacity-60">
                 Technical blueprints and intellectual property filing for our proprietary mechanical mechanisms.
               </p>
             </div>
-            <div className="text-right">
-              <span className="text-5xl md:text-8xl font-black text-slate-100 uppercase tracking-tighter">001—006</span>
+            <div className="text-center md:text-right">
+              <span className="text-5xl sm:text-6xl md:text-8xl font-black text-slate-100 uppercase tracking-tighter">001—006</span>
             </div>
           </div>
 
@@ -139,9 +139,9 @@ export default function QualityCertificationPage() {
       </section>
 
       {/* Technical Excellence Section */}
-      <section className="py-24 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+      <section className="py-20 lg:py-24 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20 items-center px-4 sm:px-0">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -189,12 +189,12 @@ export default function QualityCertificationPage() {
       {/* Document CTA */}
       <section className="py-20 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-10">
-          <div className="bg-slate-900 p-12 md:p-20 flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
-            <div className="max-w-xl">
-              <h2 className="text-white text-4xl font-black uppercase tracking-tighter mb-6 leading-none">Download <br />Technical Certificates.</h2>
-              <p className="text-slate-400 text-sm leading-relaxed uppercase tracking-widest font-bold opacity-60">Full ISO documentation and laboratory reports available for authorized partners.</p>
+          <div className="bg-slate-900 p-8 sm:p-12 md:p-20 flex flex-col md:flex-row justify-between items-center gap-10 sm:gap-12 text-center md:text-left">
+            <div className="max-w-xl px-2 sm:px-0">
+              <h2 className="text-white text-3xl sm:text-4xl font-black uppercase tracking-tighter mb-6 leading-none">Download <br className="hidden sm:block" />Technical Certificates.</h2>
+              <p className="text-slate-400 text-[10px] sm:text-sm leading-relaxed uppercase tracking-widest font-bold opacity-60">Full ISO documentation and laboratory reports available for authorized partners.</p>
             </div>
-            <button className="px-10 py-5 bg-blue-600 text-white font-black text-sm uppercase tracking-[0.2em] hover:bg-white hover:text-slate-900 transition-all">
+            <button className="px-10 py-5 bg-blue-600 text-white font-black text-[10px] sm:text-sm uppercase tracking-[0.2em] hover:bg-white hover:text-slate-900 transition-all w-full sm:w-auto shrink-0">
               Access Data Portal
             </button>
           </div>

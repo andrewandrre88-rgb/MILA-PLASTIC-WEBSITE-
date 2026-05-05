@@ -44,54 +44,58 @@ export default function ProductsPage() {
 
       {/* Filter Bar */}
       <section className="sticky top-20 z-30 bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-10 py-6 flex flex-wrap items-center gap-8">
-          <div className="flex items-center gap-3 text-slate-400 mr-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10 py-4 sm:py-6 flex flex-col md:flex-row md:items-center gap-4 sm:gap-8">
+          <div className="flex items-center gap-3 text-slate-400">
              <Filter className="w-4 h-4" />
-             <span className="text-[10px] font-black uppercase tracking-[0.2em]">Filter Catalog</span>
+             <span className="text-[10px] font-black uppercase tracking-[0.2em] whitespace-nowrap">Filter Catalog</span>
           </div>
 
-          <div className="flex flex-wrap gap-4 items-center">
-            <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mr-2">Category:</span>
-            {categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-1.5 text-[10px] font-black uppercase tracking-widest border transition-all ${
-                  activeCategory === cat 
-                  ? "bg-slate-900 text-white border-slate-900" 
-                  : "bg-transparent text-slate-400 border-slate-100 hover:border-slate-300"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
+          <div className="flex-grow flex flex-col gap-4 overflow-hidden">
+            <div className="flex items-center gap-4">
+              <span className="text-[8px] sm:text-[9px] font-bold text-slate-400 uppercase tracking-widest shrink-0">Category:</span>
+              <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none mask-fade-right">
+                {categories.map(cat => (
+                  <button
+                    key={cat}
+                    onClick={() => setActiveCategory(cat)}
+                    className={`px-3 py-1 text-[9px] sm:text-[10px] font-black uppercase tracking-widest border transition-all whitespace-nowrap shrink-0 ${
+                      activeCategory === cat 
+                      ? "bg-slate-900 text-white border-slate-900" 
+                      : "bg-transparent text-slate-400 border-slate-100 hover:border-slate-300"
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-          <div className="h-6 w-px bg-slate-100 hidden md:block"></div>
-
-          <div className="flex flex-wrap gap-4 items-center">
-            <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mr-2">Material:</span>
-            {materials.map(mat => (
-              <button
-                key={mat}
-                onClick={() => setActiveMaterial(mat)}
-                className={`px-4 py-1.5 text-[10px] font-black uppercase tracking-widest border transition-all ${
-                  activeMaterial === mat 
-                  ? "bg-blue-600 text-white border-blue-600" 
-                  : "bg-transparent text-slate-400 border-slate-100 hover:border-slate-300"
-                }`}
-              >
-                {mat || "Unspecified"}
-              </button>
-            ))}
+            <div className="flex items-center gap-4">
+              <span className="text-[8px] sm:text-[9px] font-bold text-slate-400 uppercase tracking-widest shrink-0">Material:</span>
+              <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none mask-fade-right">
+                {materials.map(mat => (
+                  <button
+                    key={mat}
+                    onClick={() => setActiveMaterial(mat)}
+                    className={`px-3 py-1 text-[9px] sm:text-[10px] font-black uppercase tracking-widest border transition-all whitespace-nowrap shrink-0 ${
+                      activeMaterial === mat 
+                      ? "bg-blue-600 text-white border-blue-600" 
+                      : "bg-transparent text-slate-400 border-slate-100 hover:border-slate-300"
+                    }`}
+                  >
+                    {mat || "Unspecified"}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           {(activeCategory !== "All" || activeMaterial !== "All") && (
             <button 
               onClick={() => { setActiveCategory("All"); setActiveMaterial("All"); }}
-              className="flex items-center gap-2 text-red-500 hover:text-red-600 transition-colors"
+              className="flex items-center gap-2 text-red-500 hover:text-red-600 transition-colors shrink-0"
             >
-              <X className="w-4 h-4" />
+              <X className="w-3.5 h-3.5" />
               <span className="text-[9px] font-black uppercase tracking-[0.2em]">Reset</span>
             </button>
           )}
@@ -101,7 +105,7 @@ export default function ProductsPage() {
       {/* Products Grid */}
       <section className="py-20 bg-white min-h-[600px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-10">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 lg:gap-16">
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product, idx) => (
                 <motion.div

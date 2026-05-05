@@ -15,7 +15,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-20 lg:py-32 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 architectural-grid"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-10 relative z-10">
           <motion.div
@@ -24,11 +24,11 @@ export default function AboutPage() {
             className="max-w-3xl"
           >
             <div className="inline-block px-3 py-1 bg-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-6 text-white">Mila Plastic Industry</div>
-            <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] mb-8">
+            <h1 className="text-4xl sm:text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.9] md:leading-[0.8] mb-8">
               <span className="text-blue-500">Engineering</span> <br />
               <span className="text-white italic">Excellence.</span>
             </h1>
-            <p className="text-slate-400 text-xl leading-relaxed">
+            <p className="text-slate-400 text-lg sm:text-xl leading-relaxed max-w-2xl px-2 sm:px-0">
               Zhejiang Mila Plastic Industry Co., Ltd. is a leading global manufacturer specializing in high-performance cosmetic and industrial sprayer systems.
             </p>
           </motion.div>
@@ -104,11 +104,11 @@ export default function AboutPage() {
       </section>
 
       {/* Factory Video Section */}
-      <section id="factory-video" className="py-24 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="mb-16 text-center max-w-2xl mx-auto">
+      <section id="factory-video" className="py-20 lg:py-24 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10">
+          <div className="mb-12 lg:mb-16 text-center max-w-2xl mx-auto">
             <div className="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[9px] font-black uppercase tracking-[0.3em] mb-4 border border-blue-100">Video Insight</div>
-            <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">
+            <h3 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">
               Facility <span className="text-blue-600 italic">In Motion.</span>
             </h3>
             <p className="text-slate-600 text-sm leading-relaxed uppercase font-bold tracking-widest opacity-60">
@@ -134,11 +134,11 @@ export default function AboutPage() {
       </section>
 
       {/* Inside the Factory Video Section */}
-      <section id="inside-factory" className="py-24 bg-white border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="mb-16 text-center max-w-2xl mx-auto">
+      <section id="inside-factory" className="py-20 lg:py-24 bg-white border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10">
+          <div className="mb-12 lg:mb-16 text-center max-w-2xl mx-auto">
             <div className="inline-block px-3 py-1 bg-slate-900 text-white text-[9px] font-black uppercase tracking-[0.3em] mb-4">On-Site Access</div>
-            <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">
+            <h3 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">
               Inside <span className="text-blue-600 italic">The Factory.</span>
             </h3>
             <p className="text-slate-600 text-sm leading-relaxed uppercase font-bold tracking-widest opacity-60">
@@ -164,12 +164,12 @@ export default function AboutPage() {
       </section>
 
       {/* Machine working video section */}
-      <section id="machine-operation" className="py-24 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+      <section id="machine-operation" className="py-20 lg:py-24 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 px-4 md:px-0">
             <div>
               <div className="inline-block px-3 py-1 bg-blue-600 text-white text-[9px] font-black uppercase tracking-[0.3em] mb-4">Precision Engineering</div>
-              <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none">
                 Machine <br /><span className="text-blue-600 italic">Core Dynamics.</span>
               </h3>
             </div>
