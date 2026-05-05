@@ -124,9 +124,9 @@ export default function PrecisionMistSprayerPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-24 lg:pt-32 pb-20 overflow-hidden border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <section className="relative pt-20 lg:pt-32 pb-20 overflow-hidden border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -136,62 +136,62 @@ export default function PrecisionMistSprayerPage() {
                 <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 font-black text-[10px] uppercase tracking-widest rounded-full">
                   Advanced Dispensing System
                 </span>
-                <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-slate-900 leading-[0.95]">
+                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black uppercase tracking-tighter text-slate-900 leading-[0.95]">
                   Precision <br className="hidden lg:block" />
                   <span className="text-blue-600">0.1cc Mist.</span>
                 </h1>
-                <p className="text-lg md:text-xl font-bold text-slate-400 uppercase tracking-tight">{productData.subtitle}</p>
+                <p className="text-base sm:text-lg md:text-xl font-bold text-slate-400 uppercase tracking-tight">{productData.subtitle}</p>
               </div>
 
-              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+              <p className="text-slate-500 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 px-4 sm:px-0">
                 {productData.description}
               </p>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 py-8 border-y border-slate-100 w-full">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8 py-8 border-y border-slate-100 w-full">
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">MOQ</p>
+                  <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">MOQ</p>
                   <p className="text-lg md:text-xl font-black text-slate-900">{productData.moq}</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Price</p>
+                  <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Price</p>
                   <p className="text-lg md:text-xl font-black text-blue-600">{productData.price}</p>
                 </div>
                 <div className="space-y-1 col-span-2 sm:col-span-1">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Lead Time</p>
+                  <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Lead Time</p>
                   <p className="text-lg md:text-xl font-black text-slate-900">{productData.delivery}</p>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 w-full">
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 w-full px-4 sm:px-0">
                 <a 
                   href="https://wa.me/8618567413851"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 px-10 py-5 bg-blue-600 text-white font-black text-xs uppercase tracking-[0.2em] shadow-xl shadow-blue-600/20 hover:scale-105 transition-transform"
+                  className="flex items-center justify-center gap-3 px-8 sm:px-10 py-5 bg-blue-600 text-white font-black text-[10px] sm:text-xs uppercase tracking-[0.2em] shadow-xl shadow-blue-600/20 hover:scale-105 transition-all w-full sm:w-auto"
                 >
                   <i className="fa-brands fa-whatsapp text-lg"></i>
                   Chat Now
                 </a>
                 <a 
                   href="#specs"
-                  className="flex items-center justify-center px-10 py-5 border-2 border-blue-600 text-blue-600 font-black text-xs uppercase tracking-[0.2em] hover:bg-blue-600 hover:text-white transition-all"
+                  className="flex items-center justify-center px-8 sm:px-10 py-5 border-2 border-blue-600 text-blue-600 font-black text-[10px] sm:text-xs uppercase tracking-[0.2em] hover:bg-blue-600 hover:text-white transition-all w-full sm:w-auto"
                 >
                   Technical Specs
                 </a>
               </div>
 
-              <div className="flex items-center gap-6 pt-4 text-slate-400">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-4 pt-4 text-slate-400">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" />
-                  <span className="text-[10px] font-bold uppercase tracking-widest">In-Stock</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 text-green-500" />
+                  <span className="text-[9px] font-bold uppercase tracking-widest">In-Stock</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-blue-500" />
-                  <span className="text-[10px] font-bold uppercase tracking-widest">Trade Assurance</span>
+                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500" />
+                  <span className="text-[9px] font-bold uppercase tracking-widest">Trade Assurance</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Truck className="w-4 h-4 text-orange-500" />
-                  <span className="text-[10px] font-bold uppercase tracking-widest">Fast Delivery</span>
+                  <Truck className="w-3.5 h-3.5 text-orange-500" />
+                  <span className="text-[9px] font-bold uppercase tracking-widest">Fast Delivery</span>
                 </div>
               </div>
             </motion.div>
@@ -200,14 +200,14 @@ export default function PrecisionMistSprayerPage() {
               <motion.div 
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="relative aspect-square bg-[#f8fafc] flex items-center justify-center p-8 lg:p-12 border border-slate-100 group overflow-hidden"
+                className="relative aspect-square bg-[#f8fafc] flex items-center justify-center p-4 sm:p-8 lg:p-12 border border-slate-100 group overflow-hidden"
               >
-                <div className="absolute top-6 right-6 lg:top-10 lg:right-10 flex gap-3 lg:gap-4 z-10">
-                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
-                      <ShieldCheck className="w-5 h-5 lg:w-6 lg:h-6 text-blue-600" />
+                <div className="absolute top-4 right-4 lg:top-10 lg:right-10 flex gap-2 lg:gap-4 z-10">
+                   <div className="w-8 h-8 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
+                      <ShieldCheck className="w-4 h-4 lg:w-6 lg:h-6 text-blue-600" />
                    </div>
-                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
-                      <Zap className="w-5 h-5 lg:w-6 lg:h-6 text-orange-500" />
+                   <div className="w-8 h-8 lg:w-12 lg:h-12 bg-white flex items-center justify-center shadow-lg border border-slate-100">
+                      <Zap className="w-4 h-4 lg:w-6 lg:h-6 text-orange-500" />
                    </div>
                 </div>
 
@@ -244,8 +244,8 @@ export default function PrecisionMistSprayerPage() {
               </motion.div>
 
               {/* Thumbnails */}
-              <div className="flex gap-3 items-center justify-center">
-                <button onClick={prevImage} className="text-slate-300 hover:text-blue-600 transition-colors p-1">
+              <div className="flex gap-2 sm:gap-3 items-center justify-center overflow-x-auto pb-2 scrollbar-none">
+                <button onClick={prevImage} className="text-slate-300 hover:text-blue-600 transition-colors p-1 hidden sm:block">
                   <ChevronLeft className="w-5 h-5" />
                 </button>
                 <div className="flex gap-2 lg:gap-4">
@@ -253,13 +253,13 @@ export default function PrecisionMistSprayerPage() {
                     <button 
                       key={idx}
                       onClick={() => setActiveImageIndex(idx)}
-                      className={`relative w-16 h-16 lg:w-20 lg:h-20 bg-[#f8fafc] border-2 transition-all p-1.5 ${activeImageIndex === idx ? 'border-blue-600 shadow-md ring-4 ring-blue-50' : 'border-slate-100 grayscale opacity-40 hover:opacity-100 hover:grayscale-0'}`}
+                      className={`relative w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-[#f8fafc] border-2 transition-all p-1 ${activeImageIndex === idx ? 'border-blue-600 shadow-md ring-2 sm:ring-4 ring-blue-50' : 'border-slate-100 grayscale opacity-40 hover:opacity-100 hover:grayscale-0'}`}
                     >
                       <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-contain mix-blend-multiply" />
                     </button>
                   ))}
                 </div>
-                <button onClick={nextImage} className="text-slate-300 hover:text-blue-600 transition-colors p-1">
+                <button onClick={nextImage} className="text-slate-300 hover:text-blue-600 transition-colors p-1 hidden sm:block">
                   <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
@@ -269,23 +269,23 @@ export default function PrecisionMistSprayerPage() {
       </section>
 
       {/* Usage Scenarios Section */}
-      <section className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter text-slate-900 mb-4">
+      <section className="py-20 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="text-center mb-16 lg:mb-20">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-slate-900 mb-4 px-4">
               Endless <span className="text-blue-600">Possibilities.</span>
             </h2>
-            <p className="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Optimized for versatile liquid formulations</p>
+            <p className="text-slate-400 font-bold uppercase tracking-widest text-[9px] sm:text-[10px]">Optimized for versatile liquid formulations</p>
           </div>
           
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {productData.applications.map((app, idx) => (
               <motion.div 
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="group relative p-8 bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all text-center"
+                className="group relative p-6 sm:p-8 bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all text-center"
               >
                 <div className="text-4xl mb-6">{app.icon}</div>
                 <h3 className="text-lg font-black uppercase tracking-tight text-slate-900 mb-2">{app.name}</h3>
@@ -297,25 +297,25 @@ export default function PrecisionMistSprayerPage() {
       </section>
 
       {/* Feature Grid */}
-      <section className="py-32 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="grid md:grid-cols-3 gap-8">
+      <section className="py-20 lg:py-32 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {productData.technicalSections.map((section, idx) => (
               <motion.div 
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-white p-10 border border-slate-100 shadow-sm"
+                className="bg-white p-6 sm:p-10 border border-slate-100 shadow-sm"
               >
                 <div className="w-12 h-12 bg-blue-600 flex items-center justify-center mb-8">
                    <section.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-black uppercase tracking-tighter text-slate-900 mb-8">{section.title}</h3>
-                <ul className="space-y-6">
+                <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tighter text-slate-900 mb-6 lg:mb-8">{section.title}</h3>
+                <ul className="space-y-5 lg:space-y-6">
                   {section.items.map((item, i) => (
                     <li key={i} className="space-y-1">
-                      <p className="text-[10px] font-black uppercase tracking-widest text-blue-600">{item.label}</p>
+                      <p className="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-blue-600">{item.label}</p>
                       <p className="text-slate-500 text-sm leading-relaxed">{item.text}</p>
                     </li>
                   ))}
@@ -327,102 +327,102 @@ export default function PrecisionMistSprayerPage() {
       </section>
 
       {/* Logistics Stats */}
-      <section className="py-24 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
-            <div className="space-y-3">
+      <section className="py-16 sm:py-24 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
+            <div className="space-y-3 flex flex-col items-center sm:items-start text-center sm:text-left">
               <BarChart3 className="w-8 h-8 text-slate-300" />
-              <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400">Weekly Output</h4>
-              <p className="text-3xl font-black text-slate-900">{productData.capacity}</p>
+              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Weekly Output</h4>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">{productData.capacity}</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 flex flex-col items-center sm:items-start text-center sm:text-left">
               <Package className="w-8 h-8 text-slate-300" />
-              <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400">Carton Units</h4>
-              <p className="text-3xl font-black text-slate-900">2,500 PCS</p>
+              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Carton Units</h4>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">2,500 PCS</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 flex flex-col items-center sm:items-start text-center sm:text-left">
               <Globe className="w-8 h-8 text-slate-300" />
-              <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400">Origin Site</h4>
-              <p className="text-3xl font-black text-slate-900">Quzhou, CN</p>
+              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Origin Site</h4>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">Quzhou, CN</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 flex flex-col items-center sm:items-start text-center sm:text-left">
               <CheckCircle2 className="w-8 h-8 text-blue-600" />
-              <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400">Sample Unit</h4>
-              <p className="text-3xl font-black text-slate-900">FREE OFFER</p>
+              <h4 className="text-[9px] font-black uppercase tracking-widest text-slate-400">Sample Unit</h4>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">FREE OFFER</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quality Control Flow */}
-      <section className="py-32 bg-white text-slate-900 overflow-hidden border-y border-slate-100">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="flex flex-col lg:flex-row justify-between items-end mb-20 gap-8">
+      <section className="py-20 lg:py-32 bg-white text-slate-900 overflow-hidden border-y border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-16 lg:mb-20 gap-8 text-center lg:text-left">
             <div className="max-w-2xl">
-              <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 leading-[0.9]">
+              <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter mb-6 leading-[0.9]">
                 <span className="text-blue-600 block mb-2 cursor-default">Philosophy.</span>
                 Zero-Defect
               </h2>
-              <p className="text-slate-500 text-lg">Every single unit undergoes rigorous multi-stage verification before dispatch.</p>
+              <p className="text-slate-500 text-base lg:text-lg">Every single unit undergoes rigorous multi-stage verification before dispatch.</p>
             </div>
-            <div className="flex gap-4">
-               <div className="px-6 py-3 border border-slate-200 text-[10px] font-black uppercase tracking-[0.3em]">ISO 9001:2015</div>
-               <div className="px-6 py-3 border border-slate-200 text-[10px] font-black uppercase tracking-[0.3em]">SGS CERTIFIED</div>
+            <div className="flex flex-wrap justify-center lg:justify-end gap-3 sm:gap-4">
+               <div className="px-4 sm:px-6 py-2.5 sm:py-3 border border-slate-200 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.3em]">ISO 9001:2015</div>
+               <div className="px-4 sm:px-6 py-2.5 sm:py-3 border border-slate-200 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.3em]">SGS CERTIFIED</div>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-12 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 lg:gap-12 relative">
             {QC_STEPS.map((step, idx) => (
-              <div key={idx} className="relative z-10">
-                <div className="w-16 h-16 bg-blue-600 text-white flex items-center justify-center font-black text-2xl mb-8">
+              <div key={idx} className="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
+                <div className="w-12 h-12 lg:w-16 lg:h-16 bg-blue-600 text-white flex items-center justify-center font-black text-xl lg:text-2xl mb-6 lg:mb-8">
                   0{idx + 1}
                 </div>
-                <h4 className="text-xl font-black uppercase tracking-tight mb-2 text-slate-900">{step.title}</h4>
+                <h4 className="text-lg lg:text-xl font-black uppercase tracking-tight mb-2 text-slate-900">{step.title}</h4>
                 <p className="text-slate-500 text-sm">{step.desc}</p>
               </div>
             ))}
             {/* Background Line */}
-            <div className="hidden md:block absolute top-8 left-0 w-full h-px bg-slate-100 -z-0"></div>
+            <div className="hidden md:block absolute top-[24px] lg:top-[32px] left-0 w-full h-px bg-slate-100 -z-0"></div>
           </div>
         </div>
       </section>
 
       {/* Customization Grid */}
-      <section className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <div className="space-y-12">
-               <div>
-                 <h2 className="text-5xl font-black uppercase tracking-tighter text-slate-900 mb-6">
+      <section className="py-20 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+            <div className="space-y-10 lg:space-y-12">
+               <div className="text-center lg:text-left px-4 sm:px-0">
+                 <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter text-slate-900 mb-6">
                    Tailored to <br /><span className="text-blue-600">Your Vision.</span>
                  </h2>
-                 <p className="text-slate-500 text-lg leading-relaxed">
+                 <p className="text-slate-500 text-base lg:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
                    From bespoke color matching to unique branding applications, we engineer the pump to align perfectly with your packaging aesthetics.
                  </p>
                </div>
                
-               <div className="grid grid-cols-2 gap-8">
+               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-0">
                  {productData.customization.map((item, idx) => (
-                   <div key={idx} className="space-y-2">
+                   <div key={idx} className="space-y-3 flex flex-col items-center lg:items-start text-center lg:text-left">
                      <div className="w-10 h-10 bg-slate-100 flex items-center justify-center">
                         <Settings className="w-5 h-5 text-slate-400" />
                      </div>
                      <h4 className="text-sm font-black uppercase tracking-tight text-slate-900">{item.title}</h4>
-                     <p className="text-xs text-slate-500 leading-relaxed">{item.detail}</p>
+                     <p className="text-xs text-slate-500 leading-relaxed max-w-[200px] lg:max-w-none">{item.detail}</p>
                    </div>
                  ))}
                </div>
             </div>
-            <div className="relative">
+            <div className="relative px-4 sm:px-0">
                <div className="aspect-[4/3] bg-slate-50 border border-slate-100 flex items-center justify-center overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/5 to-transparent"></div>
                   <img 
                     src={productData.images[0]} 
                     alt="Customization" 
-                    className="w-3/4 h-3/4 object-contain opacity-20 grayscale"
+                    className="w-2/3 lg:w-3/4 h-2/3 lg:h-3/4 object-contain opacity-20 grayscale"
                   />
-                  <div className="absolute inset-0 flex flex-center items-center justify-center">
-                    <span className="text-[10px] font-black uppercase tracking-[1em] text-slate-300 vertical-text">CUSTOM CONFIGURATIONS</span>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="text-[8px] sm:text-[10px] font-black uppercase tracking-[1em] text-slate-300 vertical-text">CUSTOM CONFIGURATIONS</span>
                   </div>
                </div>
             </div>
@@ -431,55 +431,55 @@ export default function PrecisionMistSprayerPage() {
       </section>
 
       {/* Full Specs Table */}
-      <section id="specs" className="py-32">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="mb-20">
-            <h2 className="text-5xl font-black uppercase tracking-tighter text-slate-900">The <span className="text-blue-600">Full Spec.</span></h2>
+      <section id="specs" className="py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="mb-16 lg:mb-20 text-center lg:text-left">
+            <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter text-slate-900">The <span className="text-blue-600">Full Spec.</span></h2>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-20">
-            <div className="space-y-12">
-              <div className="grid grid-cols-1 gap-4">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+            <div className="space-y-10 lg:space-y-12">
+              <div className="grid grid-cols-1 gap-2 sm:gap-4">
                 {productData.specs.map((spec, idx) => (
-                  <div key={idx} className="flex justify-between items-center py-5 border-b border-slate-100">
-                    <span className="text-xs font-black uppercase tracking-widest text-slate-400">{spec.label}</span>
-                    <span className="text-slate-900 font-bold">{spec.value}</span>
+                  <div key={idx} className="flex justify-between items-center py-4 lg:py-5 border-b border-slate-100">
+                    <span className="text-[10px] lg:text-xs font-black uppercase tracking-widest text-slate-400">{spec.label}</span>
+                    <span className="text-slate-900 font-bold text-sm lg:text-base">{spec.value}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="p-8 bg-blue-50 border border-blue-100 rounded-xl">
-                <h4 className="text-sm font-black uppercase tracking-widest text-blue-600 mb-4 flex items-center gap-2">
+              <div className="p-6 sm:p-8 bg-blue-50 border border-blue-100 rounded-xl">
+                <h4 className="text-xs sm:text-sm font-black uppercase tracking-widest text-blue-600 mb-6 flex items-center gap-2">
                   <CreditCard className="w-4 h-4" /> Payment & Logistics
                 </h4>
-                <div className="grid grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
                   <div className="space-y-1">
-                    <p className="text-[10px] uppercase font-bold text-slate-400">Methods</p>
+                    <p className="text-[9px] lg:text-[10px] uppercase font-bold text-slate-400">Methods</p>
                     <p className="text-sm font-black text-slate-900">{productData.payment}</p>
                   </div>
                   <div className="space-y-1">
-                    <p className="text-[10px] uppercase font-bold text-slate-400">Packaging</p>
-                    <p className="text-sm font-black text-slate-900 leading-tight">{productData.packaging}</p>
+                    <p className="text-[9px] lg:text-[10px] uppercase font-bold text-slate-400">Packaging</p>
+                    <p className="text-xs sm:text-sm font-black text-slate-900 leading-tight">{productData.packaging}</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white p-12 text-slate-900 border border-slate-100 shadow-sm">
-              <h3 className="text-2xl font-black uppercase tracking-tighter mb-10">Manufacturing Excellence</h3>
-              <div className="space-y-12">
+            <div className="bg-white p-6 sm:p-12 text-slate-900 border border-slate-100 shadow-sm">
+              <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tighter mb-8 lg:mb-10 text-center lg:text-left">Manufacturing Excellence</h3>
+              <div className="space-y-10 lg:space-y-12">
                 {productData.manufacturing.map((m, idx) => (
-                  <div key={idx} className="flex gap-6">
-                    <div className="text-blue-600 font-black text-2xl tracking-tighter">0{idx + 1}</div>
-                    <div className="space-y-2">
-                      <h4 className="text-lg font-black uppercase tracking-tight">{m.title}</h4>
-                      <p className="text-slate-500 text-sm">{m.detail}</p>
+                  <div key={idx} className="flex gap-4 lg:gap-6">
+                    <div className="text-blue-600 font-black text-xl lg:text-2xl tracking-tighter">0{idx + 1}</div>
+                    <div className="space-y-1 lg:space-y-2">
+                      <h4 className="text-base lg:text-lg font-black uppercase tracking-tight">{m.title}</h4>
+                      <p className="text-slate-500 text-sm leading-relaxed">{m.detail}</p>
                     </div>
                   </div>
                 ))}
               </div>
               
-              <div className="mt-20 pt-10 border-t border-slate-100 uppercase italic text-[10px] tracking-[0.3em] text-slate-400">
+              <div className="mt-12 lg:mt-20 pt-8 lg:pt-10 border-t border-slate-100 uppercase italic text-[9px] lg:text-[10px] tracking-[0.3em] text-slate-400 text-center lg:text-left">
                 Quality Guaranteed by MILA Industrial Standards
               </div>
             </div>
@@ -488,28 +488,28 @@ export default function PrecisionMistSprayerPage() {
       </section>
 
       {/* FAQ & Support Section */}
-      <section className="py-32 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <section className="py-20 lg:py-32 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 lg:px-10">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl font-black uppercase tracking-tighter text-slate-900">Expert <span className="text-blue-600">Assistance.</span></h2>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-4">Common questions about our dispensing solutions</p>
+            <div className="text-center mb-16 lg:mb-20">
+              <h2 className="text-3xl lg:text-4xl font-black uppercase tracking-tighter text-slate-900">Expert <span className="text-blue-600">Assistance.</span></h2>
+              <p className="text-[9px] lg:text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-4">Common questions about our dispensing solutions</p>
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-4 lg:space-y-6">
               {productData.faqs.map((faq, idx) => (
-                <div key={idx} className="bg-white p-8 border border-slate-200">
-                  <h4 className="text-lg font-black uppercase tracking-tight text-slate-900 mb-4">{faq.q}</h4>
+                <div key={idx} className="bg-white p-6 lg:p-8 border border-slate-200">
+                  <h4 className="text-base sm:text-lg font-black uppercase tracking-tight text-slate-900 mb-3 lg:mb-4">{faq.q}</h4>
                   <p className="text-slate-500 text-sm leading-relaxed">{faq.a}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-20 p-10 bg-white border-2 border-dashed border-slate-200 text-center">
-               <p className="text-slate-500 font-medium mb-6">Have a specific technical requirement or need a custom quote?</p>
+            <div className="mt-16 lg:mt-20 p-8 lg:p-10 bg-white border-2 border-dashed border-slate-200 text-center">
+               <p className="text-slate-500 text-sm sm:text-base font-medium mb-6">Have a specific technical requirement or need a custom quote?</p>
                <a 
                 href="mailto:sales@milaplastics.com"
-                className="inline-flex items-center gap-3 text-blue-600 font-black uppercase tracking-widest text-xs border-b-2 border-blue-600 pb-1 hover:gap-6 transition-all"
+                className="inline-flex items-center gap-3 text-blue-600 font-black uppercase tracking-widest text-[10px] sm:text-xs border-b-2 border-blue-600 pb-1 hover:gap-6 transition-all"
                >
                  Consult with our Engineers <ChevronRight className="w-4 h-4" />
                </a>
@@ -519,22 +519,22 @@ export default function PrecisionMistSprayerPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-white overflow-hidden relative border-t border-slate-100">
+      <section className="py-20 lg:py-24 bg-white overflow-hidden relative border-t border-slate-100">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(black 1px, transparent 1px), linear-gradient(90deg, black 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
         </div>
-        <div className="max-w-7xl mx-auto px-10 relative z-10 text-center">
-          <h2 className="text-5xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter mb-8 italic">Ready to <span className="text-blue-600">Transform</span> Your Branding?</h2>
-          <div className="flex flex-wrap justify-center gap-6">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter mb-8 lg:mb-12 italic leading-none">Ready to <span className="text-blue-600">Transform</span> Your Branding?</h2>
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
             <a 
               href="mailto:sales@milaplastics.com" 
-              className="px-12 py-6 bg-blue-600 text-white font-black text-sm uppercase tracking-[0.3em] shadow-xl shadow-blue-600/20 hover:scale-105 transition-transform"
+              className="px-8 lg:px-12 py-5 lg:py-6 bg-blue-600 text-white font-black text-xs lg:text-sm uppercase tracking-[0.3em] shadow-xl shadow-blue-600/20 hover:scale-105 transition-all w-full sm:w-auto"
             >
               Request Quote
             </a>
             <a 
               href="https://wa.me/8618567413851" 
-              className="px-12 py-6 border-2 border-slate-900 text-slate-900 font-black text-sm uppercase tracking-[0.3em] hover:bg-slate-900 hover:text-white transition-all"
+              className="px-8 lg:px-12 py-5 lg:py-6 border-2 border-slate-900 text-slate-900 font-black text-xs lg:text-sm uppercase tracking-[0.3em] hover:bg-slate-900 hover:text-white transition-all w-full sm:w-auto"
             >
               Consult Engineering
             </a>

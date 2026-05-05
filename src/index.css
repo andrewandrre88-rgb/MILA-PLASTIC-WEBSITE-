@@ -40,3 +40,9 @@
 .data-border {
   @apply border-slate-100;
 }
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
