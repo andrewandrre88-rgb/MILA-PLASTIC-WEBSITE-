@@ -263,7 +263,7 @@ export default function ClipLockLotionPumpPage() {
                 className="bg-white/5 backdrop-blur-md p-8 sm:p-12 border border-white/10"
               >
                 <section.icon className="w-10 h-10 text-blue-500 mb-8" />
-                <h3 className="text-2xl font-black uppercase tracking-tight mb-8 mb-10">{section.title}</h3>
+                <h3 className="text-2xl font-black uppercase tracking-tight mb-8 text-white">{section.title}</h3>
                 <ul className="space-y-6 lg:space-y-8">
                   {section.items.map((item, i) => (
                     <li key={i} className="space-y-1">
