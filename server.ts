@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import fs from "fs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,9 +21,31 @@ async function startServer() {
   } else {
     // In production, serve the built static files
     const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
+    
+    // Serve static assets
+    app.use(express.static(distPath, { index: false }));
+
+    // Handle index.html and inject runtime environment variables
     app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
+      const indexPath = path.join(distPath, "index.html");
+      
+      if (fs.existsSync(indexPath)) {
+        let content = fs.readFileSync(indexPath, "utf8");
+        
+        // Inject runtime GEMINI_API_KEY into the HTML so the frontend can access it
+        const envScript = `
+          <script>
+            window.process = window.process || {};
+            window.process.env = window.process.env || {};
+            window.process.env.GEMINI_API_KEY = ${JSON.stringify(process.env.GEMINI_API_KEY || "")};
+          </script>
+        `;
+        
+        content = content.replace("</head>", `${envScript}</head>`);
+        res.send(content);
+      } else {
+        res.status(404).send("Not Found");
+      }
     });
   }
 

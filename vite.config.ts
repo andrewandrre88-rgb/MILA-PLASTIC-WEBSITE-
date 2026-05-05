@@ -9,7 +9,8 @@ export default defineConfig(({mode}) => {
     base: '/',
     plugins: [react(), tailwindcss()],
     define: {
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      // We handle GEMINI_API_KEY via runtime injection in server.ts for production
+      // but we can still define other env vars here if needed.
     },
     resolve: {
       alias: {

@@ -3,7 +3,19 @@ import { motion, AnimatePresence } from "motion/react";
 import { MessageSquare, X, Send, Bot, User, Loader2, Minimize2, Maximize2 } from "lucide-react";
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+// Lazy initialization of the AI client
+let aiInstance: GoogleGenAI | null = null;
+const getAi = () => {
+  if (!aiInstance) {
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      console.error("GEMINI_API_KEY is not defined. Please set it in your environment variables.");
+      return null;
+    }
+    aiInstance = new GoogleGenAI({ apiKey });
+  }
+  return aiInstance;
+};
 
 interface Message {
   role: "user" | "model";
@@ -37,6 +49,11 @@ export default function MilaAi() {
     setIsLoading(true);
 
     try {
+      const ai = getAi();
+      if (!ai) {
+        throw new Error("AI service is not configured (missing API key).");
+      }
+
       const response = await ai.models.generateContent({
         model: "gemini-3-flash-preview",
         contents: [
