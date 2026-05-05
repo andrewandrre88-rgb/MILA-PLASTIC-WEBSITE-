@@ -1,26 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { MessageSquare, X, Send, Bot, User, Loader2, Minimize2, Maximize2 } from "lucide-react";
-import { GoogleGenAI } from "@google/genai";
-
-// Lazy initialization of the AI client
-let aiInstance: GoogleGenAI | null = null;
-const getAi = () => {
-  if (!aiInstance) {
-    // Check various ways the API key might be exposed
-    const apiKey = 
-      (window as any).process?.env?.GEMINI_API_KEY || 
-      process.env.GEMINI_API_KEY || 
-      (import.meta as any).env?.VITE_GEMINI_API_KEY;
-
-    if (!apiKey) {
-      console.error("GEMINI_API_KEY is not defined. Please set it in your environment variables.");
-      return null;
-    }
-    aiInstance = new GoogleGenAI({ apiKey });
-  }
-  return aiInstance;
-};
 
 interface Message {
   role: "user" | "model";
@@ -50,47 +30,26 @@ export default function MilaAi() {
 
     const userMessage = input.trim();
     setInput("");
-    setMessages((prev) => [...prev, { role: "user", text: userMessage }]);
+    const newMessages: Message[] = [...messages, { role: "user", text: userMessage }];
+    setMessages(newMessages);
     setIsLoading(true);
 
     try {
-      const ai = getAi();
-      if (!ai) {
-        throw new Error("AI service is not configured (missing API key).");
-      }
-
-      const response = await ai.models.generateContent({
-        model: "gemini-3-flash-preview",
-        contents: [
-          ...messages.map(m => ({ role: m.role, parts: [{ text: m.text }] })),
-          { role: "user", parts: [{ text: userMessage }] }
-        ],
-        config: {
-          systemInstruction: `You are a friendly, helpful representative from the Mila Plastics engineering team. 
-          Speak like a real person who deeply understands our industry and cares about the user's project.
-
-          About Mila Plastics:
-          - We specialize in high-performance trigger sprayers: Classic Stream (industrial), Aero-Mist (fine distribution), and Foam-Master (detergents).
-          - Our facility in Quzhou City, China, runs 120 injection molding machines with a daily capacity of 550,000 units.
-          - We maintain extremely high quality standards (defect rate <0.01%) using 100% optical inspection.
-          - We ship globally to over 45 countries.
-
-          Style Guidelines:
-          - KEEP IT SHORT. People are busy! ⚡
-          - USE EMOJIS. It adds a human touch. 😊🚀
-          - BE SALES-ORIENTED. Always ask questions that nudge the user to find a solution or request a quote. 📈
-          - Speak naturally. Use "we" and "I".
-          - If you're unsure about a detail, point them to our sales office at +8618567413851.
-          - Example sales nudges: "What volume are you looking to produce?" or "Would you like a technical spec sheet for that model?"`,
-          temperature: 0.7,
-        },
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: newMessages }),
       });
 
-      const aiResponse = response.text || "I'm sorry, I encountered an error processing that request. Please try again or contact our technical support.";
-      setMessages((prev) => [...prev, { role: "model", text: aiResponse }]);
+      if (!response.ok) {
+        throw new Error("Failed to connect to MilaAi service.");
+      }
+
+      const data = await response.json();
+      setMessages((prev) => [...prev, { role: "model", text: data.text }]);
     } catch (error) {
-      console.error("Gemini Error:", error);
-      setMessages((prev) => [...prev, { role: "model", text: "I'm having trouble connecting to my central processing unit. Please check your connection or try again later." }]);
+      console.error("MilaAi Error:", error);
+      setMessages((prev) => [...prev, { role: "model", text: "I'm having trouble connecting to my central processing unit. Please try again later." }]);
     } finally {
       setIsLoading(false);
     }
