@@ -134,7 +134,7 @@ export const products = [
   },
   {
     id: "LP-20",
-    name: "Clip Lock Lotion Pump",
+    name: "PP 28 410 Lotion Pump Replacement Lotion Pump Clip Lock For Hand Wash Sanitizer",
     category: "Lotion",
     material: "PP",
     description: "Premium clip-lock dispensing system for hand wash and sanitizer. Engineered for precise 1.0ml dosage with 360° travel security.",

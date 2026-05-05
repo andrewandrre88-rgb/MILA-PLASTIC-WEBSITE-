@@ -19,8 +19,8 @@ import {
 } from "lucide-react";
 
 const productData = {
-  name: "Clip Lock Lotion Pump",
-  subtitle: "PP 24/410 High-Precision Dispensing System (Type LP-20)",
+  name: "PP 28 410 Lotion Pump Replacement Lotion Pump Clip Lock For Hand Wash Sanitizer",
+  subtitle: "Professional High-Precision Dispensing System (Type LP-20)",
   images: [
     "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/0487069b-862d-488e-85c2-490d1238a8c2.png"
   ],
@@ -32,7 +32,7 @@ const productData = {
   capacity: "3,000,000 PCS/WEEK",
   origin: "Quzhou, Zhejiang, China",
   specs: [
-    { label: "Product", value: "Clip Lock Lotion Pump" },
+    { label: "Product", value: "PP 28 410 Lotion Pump Replacement Clip Lock" },
     { label: "Dosage", value: "1.0 ± 0.1ml" },
     { label: "Material", value: "Food-Grade PP" },
     { label: "Lock Type", value: "360° Clip Lock + Twist" },
@@ -111,11 +111,13 @@ export default function ClipLockLotionPumpPage() {
                 <span className="inline-block px-4 py-1.5 bg-slate-900 text-white font-black text-[10px] uppercase tracking-widest rounded-full">
                   Lotion Series | LP-20 Clip Lock
                 </span>
-                <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black uppercase tracking-tighter text-slate-900 leading-[0.95]">
-                  Travel <br className="hidden lg:block" />
-                  <span className="text-blue-600">Secured.</span>
+                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black uppercase tracking-tighter text-slate-900 leading-[0.95]">
+                  Lotion <br className="hidden lg:block" />
+                  <span className="text-blue-600">Clip Lock.</span>
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl font-bold text-slate-400 uppercase tracking-tight">{productData.subtitle}</p>
+                <p className="text-sm sm:text-base font-bold text-slate-400 uppercase tracking-widest max-w-lg leading-relaxed">
+                  {productData.name}
+                </p>
               </div>
 
               <p className="text-slate-500 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 px-4 sm:px-0">
