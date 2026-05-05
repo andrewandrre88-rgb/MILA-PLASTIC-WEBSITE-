@@ -167,58 +167,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Dynamic Gallery Section */}
-      <section className="py-20 md:py-32 bg-slate-50 border-t border-slate-200 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-10">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative z-10"
-            >
-              <div className="inline-block px-3 py-1 bg-[#0066FF] text-white text-[9px] font-black uppercase tracking-[0.3em] mb-6">Product Spectrum</div>
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
-                Versatility <br />
-                <span className="text-[#0066FF] italic">In Design.</span>
-              </h2>
-              <p className="text-slate-600 text-lg leading-relaxed mb-10 max-w-lg">
-                From high-output industrial triggers to precision fine-mist sprayers, our system architecture is built to adapt. We offer a comprehensive range of closures, custom colors, and specialized dispensing mechanisms to meet every market requirement.
-              </p>
-              <div className="space-y-4">
-                {[
-                  "Compatibility with diverse chemical compositions",
-                  "Modular design architecture for custom branding",
-                  "High-performance sealing for global transit",
-                  "Ergonomic optimization for repeat usage"
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#0066FF] rounded-full"></div>
-                    <span className="text-xs font-bold uppercase tracking-widest text-slate-900">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, x: 50 }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              className="relative"
-            >
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#0066FF]/5 to-transparent rounded-full blur-3xl -z-10"></div>
-              <img 
-                src="https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/c969b087-4d64-4790-a7ed-845fd03c1f9b.png"
-                alt="Mila Plastics Product Range"
-                className="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:scale-105 transition-transform duration-700"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Facility Showcase Section */}
       <section className="py-20 md:py-24 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-10">

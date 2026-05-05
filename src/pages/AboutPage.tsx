@@ -84,7 +84,7 @@ export default function AboutPage() {
               <div className="absolute top-0 right-0 p-8">
                 <Factory className="w-12 h-12 text-blue-600 opacity-20" />
               </div>
-              <h3 className="text-2xl font-black uppercase tracking-tighter mb-8 underline decoration-blue-600 decoration-4 underline-offset-8">Production Capacity</h3>
+              <h3 className="text-2xl font-black uppercase tracking-tighter mb-8 underline decoration-blue-600 decoration-4 underline-offset-8 text-[#eaeaea]">Production Capacity</h3>
               <ul className="space-y-8">
                 {[
                   { label: "Injection Machines", value: "60 Sets" },
@@ -100,32 +100,6 @@ export default function AboutPage() {
               </ul>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* Factory Image Section */}
-      <section className="py-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="relative group"
-          >
-            <div className="aspect-[21/9] bg-slate-100 overflow-hidden relative">
-              <img 
-                src="https://cdn.jumpshare.com/preview/MyYo-0kxWiNCuC6R1eaSF017ZscZJwhzTmuliJAZdda1iDMRWyWb027wUPbXVyFk6rTXlH6vfmbOez8NnW3CHjSgT4hOyo3c0aTmUiOO7Og" 
-                alt="Mila Plastics Advanced Factory Facility"
-                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-slate-900/10 mix-blend-multiply"></div>
-            </div>
-            <div className="absolute bottom-8 left-8 text-white z-10">
-              <div className="text-[10px] font-black uppercase tracking-[0.4em] mb-2 opacity-80">Factory Hub</div>
-              <div className="text-xl font-black uppercase tracking-tighter">Zhejiang Province, China</div>
-            </div>
-          </motion.div>
         </div>
       </section>
 
