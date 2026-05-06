@@ -1,42 +1,52 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-import { Home, Leaf, FlaskConical, Droplets, Car, PlusSquare, Sparkles } from "lucide-react";
+import { Home, Leaf, FlaskConical, Droplets, Car, PlusSquare, Sparkles, ArrowRight } from "lucide-react";
 
 const useCases = [
   {
+    id: "home-care",
     category: "Home Care",
     title: "Industrial Strength Cleaning",
     description: "Heavy-duty trigger sprayers built to withstand corrosive chemicals and acidic cleaning agents without structural degradation.",
     icon: Home,
-    image: "https://github.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/blob/main/kitchen%20cleaning.png?raw=true"
+    image: "https://github.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/blob/main/kitchen%20cleaning.png?raw=true",
+    path: "/real-use-cases/home-care"
   },
   {
+    id: "agriculture",
     category: "Agriculture & Greening",
     title: "High-Volume Coverage",
     description: "Proprietary nozzle geometry for garden and greening applications, providing wider spray patterns for efficient plant care.",
     icon: Leaf,
-    image: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/garden%20.png"
+    image: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/garden%20.png",
+    path: "/real-use-cases/agriculture"
   },
   {
+    id: "automotive",
     category: "Automotive Industry",
     title: "Vehicle Interior Care",
     description: "Specialized sprayers for automotive detailing and surface protection, offering ergonomic grips for sustained professional use.",
     icon: Car,
-    image: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/automotive.png"
+    image: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/automotive.png",
+    path: "/real-use-cases/automotive"
   },
   {
+    id: "healthcare",
     category: "Hospital & Healthcare",
     title: "Medical-Grade Sanitary",
     description: "High-precision dispensing systems for hospital sterilization and industrial sanitizers, ensuring complete surface coverage and hygienic safety.",
     icon: PlusSquare,
-    image: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/sanitizer.png"
+    image: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/sanitizer.png",
+    path: "/real-use-cases/healthcare"
   },
   {
+    id: "personal-care",
     category: "Personal Care & Hair Care",
     title: "Precision Styling Mist",
     description: "Ultra-fine atomization technology for hair stylists and salon professionals, delivering consistent coverage for high-end styling products.",
     icon: Sparkles,
-    image: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/hairCaree.png"
+    image: "https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/hairCaree.png",
+    path: "/real-use-cases/personal-care"
   }
 ];
 
@@ -75,7 +85,7 @@ export default function RealUseCasesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white border border-slate-200 p-12 md:p-16 hover:border-blue-600/50 transition-colors group relative overflow-hidden"
+                className="bg-white border border-slate-200 p-8 md:p-12 hover:border-blue-600/50 transition-colors group relative overflow-hidden"
               >
                 <div className="absolute -top-10 -right-10 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity">
                    <useCase.icon className="w-64 h-64 text-slate-900" />
@@ -91,25 +101,36 @@ export default function RealUseCasesPage() {
                       />
                     </div>
                   )}
-                  <div className="flex items-center gap-4 text-blue-600 mb-8">
-                    <useCase.icon className="w-8 h-8" />
+                  <div className="flex items-center gap-4 text-blue-600 mb-6">
+                    <useCase.icon className="w-6 h-6" />
                     <span className="text-[10px] font-black uppercase tracking-[0.4em]">{useCase.category}</span>
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-6">
+                  <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-none mb-6">
                     {useCase.title}
                   </h3>
-                  <p className="text-slate-500 text-base leading-relaxed mb-8">
+                  <p className="text-slate-500 text-sm leading-relaxed mb-8">
                     {useCase.description}
                   </p>
-                  <div className="flex gap-8 border-t border-slate-100 pt-8">
-                     <div className="flex flex-col">
-                        <span className="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-1">Standard</span>
-                        <span className="text-xs font-bold text-slate-900">MILA-S1</span>
-                     </div>
-                     <div className="flex flex-col">
-                        <span className="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-1">Compatibility</span>
-                        <span className="text-xs font-bold text-slate-900">All Formulas</span>
-                     </div>
+                  
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-slate-100 pt-8">
+                    <div className="flex gap-8">
+                       <div className="flex flex-col">
+                          <span className="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-1">Standard</span>
+                          <span className="text-xs font-bold text-slate-900">MILA-S1</span>
+                       </div>
+                       <div className="flex flex-col">
+                          <span className="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-1">Status</span>
+                          <span className="text-xs font-bold text-slate-900">Active</span>
+                       </div>
+                    </div>
+                    
+                    <Link 
+                      to={useCase.path}
+                      className="flex items-center gap-2 text-slate-900 font-black text-[10px] uppercase tracking-widest group/link hover:text-blue-600 transition-colors"
+                    >
+                      Read Case Study
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+                    </Link>
                   </div>
                 </div>
               </motion.div>

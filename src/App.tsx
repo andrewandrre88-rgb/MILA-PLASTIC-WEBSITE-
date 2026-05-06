@@ -14,6 +14,11 @@ import HistoryPage from "./pages/HistoryPage";
 import TeamPage from "./pages/TeamPage";
 import CustomInjectionPage from "./pages/CustomInjectionPage";
 import RealUseCasesPage from "./pages/RealUseCasesPage";
+import HomeCareUseCase from "./pages/HomeCareUseCase";
+import AgricultureUseCase from "./pages/AgricultureUseCase";
+import AutomotiveUseCase from "./pages/AutomotiveUseCase";
+import HealthcareUseCase from "./pages/HealthcareUseCase";
+import PersonalCareUseCase from "./pages/PersonalCareUseCase";
 import SocialMediaPage from "./pages/SocialMediaPage";
 import PrecisionMistSprayerPage from "./pages/PrecisionMistSprayerPage";
 import PrecisionBottleTriggerPage from "./pages/PrecisionBottleTriggerPage";
@@ -38,6 +43,11 @@ export default function App() {
           <Route path="/team" element={<TeamPage />} />
           <Route path="/custom-injection" element={<CustomInjectionPage />} />
           <Route path="/real-use-cases" element={<RealUseCasesPage />} />
+          <Route path="/real-use-cases/home-care" element={<HomeCareUseCase />} />
+          <Route path="/real-use-cases/agriculture" element={<AgricultureUseCase />} />
+          <Route path="/real-use-cases/automotive" element={<AutomotiveUseCase />} />
+          <Route path="/real-use-cases/healthcare" element={<HealthcareUseCase />} />
+          <Route path="/real-use-cases/personal-care" element={<PersonalCareUseCase />} />
           <Route path="/social-media" element={<SocialMediaPage />} />
           <Route path="/precision-mist-sprayer" element={<PrecisionMistSprayerPage />} />
           <Route path="/products/precision-bottle-trigger" element={<PrecisionBottleTriggerPage />} />
