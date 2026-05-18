@@ -141,7 +141,7 @@ export default function ClipLockLotionPumpPage() {
 
               <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 w-full px-4 sm:px-0">
                 <a 
-                  href="https://wa.me/8618567413851"
+                  href="https://wa.me/8613738132673"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 px-8 sm:px-10 py-5 bg-blue-600 text-white font-black text-[10px] sm:text-xs uppercase tracking-[0.2em] shadow-xl shadow-blue-600/20 hover:scale-105 transition-all w-full sm:w-auto"
@@ -355,7 +355,7 @@ export default function ClipLockLotionPumpPage() {
               Get Best Price
             </a>
             <a 
-              href="https://wa.me/8618567413851" 
+              href="https://wa.me/8613738132673" 
               className="px-10 lg:px-16 py-6 border-2 border-slate-900 text-slate-900 font-black text-[11px] lg:text-sm uppercase tracking-[0.3em] hover:bg-slate-900 hover:text-white transition-all w-full sm:w-auto"
             >
               Chat Sales Now

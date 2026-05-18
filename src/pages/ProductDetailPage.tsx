@@ -172,7 +172,7 @@ export default function ProductDetailPage() {
 
               <div className="flex flex-wrap gap-4 pt-8">
                 <a 
-                  href="https://wa.me/8618567413851"
+                  href="https://wa.me/8613738132673"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-grow sm:flex-grow-0 flex items-center justify-center gap-3 px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-[0.2em] text-center hover:bg-[#128C7E] transition-all shadow-xl shadow-green-600/20"

@@ -29,7 +29,7 @@ const socialChannels = [
   {
     name: "Facebook",
     icon: "fa-brands fa-facebook",
-    handle: "Mila Plastics Global",
+    handle: "Mila Plastics Factory",
     description: "Connect with our global community and stay updated with company milestones.",
     color: "bg-[#1877f2]",
     link: "https://www.facebook.com"
@@ -45,10 +45,10 @@ const socialChannels = [
   {
     name: "WhatsApp",
     icon: "fa-brands fa-whatsapp",
-    handle: "Direct Support Line",
+    handle: "+86 13738132673",
     description: "Connect directly with our logistics and technical support teams in real-time.",
     color: "bg-[#25D366]",
-    link: "https://wa.me/1234567890"
+    link: "https://wa.me/8613738132673"
   },
   {
     name: "TikTok",
@@ -59,12 +59,12 @@ const socialChannels = [
     link: "https://www.tiktok.com"
   },
   {
-    name: "Telegram",
-    icon: "fa-brands fa-telegram",
-    handle: "Mila Announcements",
-    description: "Join our broadcast channel for instant stock updates and price alerts.",
-    color: "bg-[#0088cc]",
-    link: "https://t.me/milaplastics"
+    name: "WeChat",
+    icon: "fa-brands fa-weixin",
+    handle: "Mila_plastics",
+    description: "Scan our QR code or add us by ID for instant engineering collaboration.",
+    color: "bg-[#07C160]",
+    link: "#"
   }
 ];
 

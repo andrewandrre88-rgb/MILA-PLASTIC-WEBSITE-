@@ -177,7 +177,7 @@ export default function RealUseCasesPage() {
             >
               <div className="aspect-[4/3] bg-slate-100 border border-slate-200 overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070" 
+                  src="https://raw.githubusercontent.com/andrewandrre88-rgb/MILA-PLASTICS-IMAGES/refs/heads/main/mmexport1777554925969.jpg" 
                   alt="Mila Plastics Advanced Manufacturing Facility"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

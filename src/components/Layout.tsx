@@ -11,7 +11,6 @@ import {
   ArrowRight 
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import MilaAi from "./MilaAi";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -35,7 +34,6 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen bg-white">
-      <MilaAi />
       
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white border-b border-slate-200">
@@ -189,8 +187,8 @@ export default function Layout({ children }: LayoutProps) {
                 </li>
                 <li className="flex gap-4">
                   <Phone className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                  <a href="tel:+8618567413851" className="text-slate-600 text-xs font-bold uppercase tracking-widest hover:text-blue-600 transition-colors">
-                    +86 185 6741 3851
+                  <a href="tel:+8613738132673" className="text-slate-600 text-xs font-bold uppercase tracking-widest hover:text-blue-600 transition-colors">
+                    +86 137 3813 2673
                   </a>
                 </li>
               </ul>

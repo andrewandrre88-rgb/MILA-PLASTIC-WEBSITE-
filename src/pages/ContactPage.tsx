@@ -63,7 +63,7 @@ export default function ContactPage() {
                       </p>
                       <div className="flex items-center gap-3 text-sm text-slate-400">
                          <Phone className="w-4 h-4" />
-                         <span>+1 (555) 012-3456</span>
+                         <span>+86 137 3813 2673</span>
                       </div>
                    </div>
                    <div className="space-y-4">
@@ -88,7 +88,7 @@ export default function ContactPage() {
                     {[
                       { icon: Clock, label: "Response Window", val: "Under 24 Hours" },
                       { icon: Mail, label: "Direct Support", val: "sales@mila.tech" },
-                      { icon: Phone, label: "Emergency Line", val: "24/7 Priority Support" }
+                      { icon: Globe, label: "WeChat ID", val: "Mila_plastics" }
                     ].map((item, i) => (
                       <div key={i} className="flex items-center gap-4">
                         <div className="w-10 h-10 bg-white border border-slate-200 flex items-center justify-center">

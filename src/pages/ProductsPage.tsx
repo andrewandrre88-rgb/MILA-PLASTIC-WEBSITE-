@@ -207,7 +207,7 @@ export default function ProductsPage() {
                     We offer specialized color matching, closure variations, and pallet-level pricing for enterprise contracts.
                   </p>
                </div>
-               <a href="tel:+8618567413851" className="px-10 py-5 bg-blue-600 text-white font-black text-sm uppercase tracking-[0.2em] hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 whitespace-nowrap">
+               <a href="tel:+8613738132673" className="px-10 py-5 bg-blue-600 text-white font-black text-sm uppercase tracking-[0.2em] hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 whitespace-nowrap">
                   Contact Distribution
                </a>
             </div>
