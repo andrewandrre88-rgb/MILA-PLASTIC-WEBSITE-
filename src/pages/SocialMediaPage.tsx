@@ -45,10 +45,10 @@ const socialChannels = [
   {
     name: "WhatsApp",
     icon: "fa-brands fa-whatsapp",
-    handle: "+86 13738132673",
+    handle: "+86 181 5747 6044",
     description: "Connect directly with our logistics and technical support teams in real-time.",
     color: "bg-[#25D366]",
-    link: "https://wa.me/8613738132673"
+    link: "https://wa.me/8618157476044"
   },
   {
     name: "TikTok",
