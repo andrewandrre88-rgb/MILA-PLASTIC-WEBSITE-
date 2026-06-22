@@ -17,6 +17,7 @@ import {
   ChevronLeft,
   ChevronRight
 } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 const productData = {
   name: "Precision Bottle Trigger Sprayer",
@@ -109,6 +110,12 @@ const QC_STEPS = [
 ];
 
 export default function PrecisionBottleTriggerPage() {
+  useSEO({
+    title: "Precision Bottle Trigger Sprayer Manufacturer",
+    description: "Purchase premium wholesale 1.0cc fine mist bottle trigger sprayer heads from China's leading factory. Fully customizable Type-D trigger spray mechanism.",
+    keywords: "trigger sprayer, trigger sprayer factory, heavy duty trigger sprayer, fine mist trigger spray head, custom bottle trigger sprayer"
+  });
+
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   return (

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Absolute sitemap link for crawling engines
+Sitemap: https://mila.tech/sitemap.xml

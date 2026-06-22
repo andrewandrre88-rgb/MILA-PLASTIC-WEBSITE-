@@ -17,6 +17,7 @@ import {
   ChevronLeft,
   ChevronRight
 } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 const productData = {
   name: "PP 28 410 Lotion Pump Replacement Lotion Pump Clip Lock For Hand Wash Sanitizer",
@@ -93,6 +94,12 @@ const QC_METRICS = [
 ];
 
 export default function ClipLockLotionPumpPage() {
+  useSEO({
+    title: "PP 28/410 Clip-Lock Lotion Pump Manufacturer",
+    description: "Purchase premium wholesale PP 28/410 Clip Lock Lotion Pump replacements for hand wash and sanitizer. Leak-free dispensing solutions with high standard of QC.",
+    keywords: "lotion pump, foam pump, lock lotion pump, clip lock pump, hand wash dispenser pump"
+  });
+
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   return (

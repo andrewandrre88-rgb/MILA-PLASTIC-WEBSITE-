@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Send, Phone, Mail, MapPin, Globe, Clock, ChevronRight } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 export default function ContactPage() {
+  useSEO({
+    title: "Contact Mila Plastics | Trigger Sprayer Factory Inquiry & Quotes",
+    description: "Contact our sales and engineering team. Get custom quotes, technical drawings, and free samples for high-performance trigger sprayers, mist sprayers, foam pumps, and lotion pumps.",
+    keywords: "contact trigger sprayer factory, order triggers, customized lotion pumps wholesale, wholesale sprayers supplier"
+  });
+
   const [formState, setFormState] = useState({
     name: "",
     email: "",

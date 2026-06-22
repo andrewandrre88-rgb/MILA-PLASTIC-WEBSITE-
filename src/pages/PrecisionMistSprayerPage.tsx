@@ -18,6 +18,7 @@ import {
   ChevronRight
 } from "lucide-react";
 import Markdown from "react-markdown";
+import useSEO from "../hooks/useSEO";
 
 const productData = {
   name: "Precision 0.1cc Fine Mist Sprayer",
@@ -111,6 +112,12 @@ const QC_STEPS = [
 ];
 
 export default function PrecisionMistSprayerPage() {
+  useSEO({
+    title: "Precision 0.1cc Fine Mist Sprayer",
+    description: "Wholesale food-grade PP fine mist sprayer and SS304 marine-grade spring bottle pump dispensers. Supports premium atomization and customized RAL/Pantone colors.",
+    keywords: "mist sprayer, micro fine mist, cosmetic mist sprayer, essential oil sprayer, PP mist sprayer pump"
+  });
+
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const nextImage = () => {

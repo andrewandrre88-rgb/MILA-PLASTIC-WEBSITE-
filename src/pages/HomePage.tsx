@@ -14,8 +14,15 @@ import {
 import { useRef } from "react";
 import { products } from "../data/products";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 
 export default function HomePage() {
+  useSEO({
+    title: "Premium Trigger Sprayers & Lotion Pumps Manufacturer",
+    description: "Mila Plastics is China's top-tier trigger sprayer factory producing heavy-duty trigger sprayers, mist sprayers, foam pumps, and lotion pumps. High quality with standard 100% automated optical inspection.",
+    keywords: "trigger sprayer, trigger sprayer factory, mist sprayer, foam pump, lotion pump, plastic injection molding manufacturer"
+  });
+
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -130,7 +137,7 @@ export default function HomePage() {
                 transition={{ delay: idx * 0.2 }}
                 className="group flex flex-col"
               >
-                <Link to={(product as any).customPath || `/products/${product.id}`} className="block">
+                <Link to={(product as any).customPath || `/product/${product.id}`} className="block">
                   <div className="aspect-[4/5] bg-slate-50 border border-slate-100 overflow-hidden relative mb-8">
                     <img
                       src={product.imageSrc}
@@ -150,13 +157,13 @@ export default function HomePage() {
                     <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
                     <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600">Premium Grade</span>
                   </div>
-                  <Link to={(product as any).customPath || `/products/${product.id}`} className="hover:text-blue-600 transition-colors">
+                  <Link to={(product as any).customPath || `/product/${product.id}`} className="hover:text-blue-600 transition-colors">
                     <h3 className="text-2xl font-black uppercase mb-4 tracking-tight">{product.name}</h3>
                   </Link>
                   <p className="text-slate-500 mb-8 text-sm leading-relaxed flex-grow">
                     {product.description}
                   </p>
-                  <Link to={(product as any).customPath || `/products/${product.id}`} className="w-fit flex items-center gap-4 text-xs font-black uppercase tracking-[0.2em] text-slate-900 group/btn border-b-2 border-transparent hover:border-blue-600 transition-all pb-1">
+                  <Link to={(product as any).customPath || `/product/${product.id}`} className="w-fit flex items-center gap-4 text-xs font-black uppercase tracking-[0.2em] text-slate-900 group/btn border-b-2 border-transparent hover:border-blue-600 transition-all pb-1">
                     Request Data
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-2 transition-transform" />
                   </Link>

@@ -3,13 +3,20 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, Filter, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { products } from "../data/products";
+import useSEO from "../hooks/useSEO";
 
 export default function ProductsPage() {
+  useSEO({
+    title: "Catalog | Trigger Sprayers, Mist Sprayers, Foam & Lotion Pumps",
+    description: "Explore our wholesale plastic container dispensers. Mila Plastics manufactures industrial trigger sprayers, micro fine mist sprayers, and foam & lotion pump systems certified to international quality standards.",
+    keywords: "trigger sprayer, trigger sprayer factory, mist sprayer, foam pump, lotion pump, custom lotion pump dispenser, heavy duty mist sprayer"
+  });
+
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [activeMaterial, setActiveMaterial] = useState<string>("All");
 
-  const categories = useMemo(() => ["All", ...Array.from(new Set(products.map(p => p.category)))], []);
-  const materials = useMemo(() => ["All", ...Array.from(new Set(products.map(p => p.material)))], []);
+  const categories = useMemo(() => ["All", ...Array.from(new Set(products.map(p => p.category)))], [products]);
+  const materials = useMemo(() => ["All", ...Array.from(new Set(products.map(p => p.material)))], [products]);
 
   const filteredProducts = useMemo(() => {
     return products.filter(product => {
@@ -17,7 +24,7 @@ export default function ProductsPage() {
       const materialMatch = activeMaterial === "All" || product.material === activeMaterial;
       return categoryMatch && materialMatch;
     });
-  }, [activeCategory, activeMaterial]);
+  }, [products, activeCategory, activeMaterial]);
 
   return (
     <div className="bg-white">
@@ -122,7 +129,7 @@ export default function ProductsPage() {
                   }}
                   className="group flex flex-col p-6 -m-6 rounded-3xl transition-all duration-500 hover:bg-white hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.08)]"
                 >
-                  <Link to={(product as any).customPath || `/products/${product.id}`} className="block">
+                  <Link to={(product as any).customPath || `/product/${product.id}`} className="block">
                     <div className="aspect-[4/5] bg-slate-50 border border-slate-100 overflow-hidden relative mb-8">
                       <img
                         src={product.imageSrc}
@@ -150,7 +157,7 @@ export default function ProductsPage() {
                       <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
                       <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600">Certified Grade</span>
                     </div>
-                    <Link to={(product as any).customPath || `/products/${product.id}`} className="hover:text-blue-600 transition-colors">
+                    <Link to={(product as any).customPath || `/product/${product.id}`} className="hover:text-blue-600 transition-colors">
                       <h3 className="text-3xl font-black uppercase mb-4 tracking-tighter">{product.name}</h3>
                     </Link>
                     <p className="text-slate-500 mb-8 text-sm leading-relaxed flex-grow">
@@ -166,7 +173,7 @@ export default function ProductsPage() {
                       ))}
                     </div>
 
-                    <Link to={(product as any).customPath || `/products/${product.id}`} className="w-full flex items-center justify-between p-4 bg-slate-900 text-white text-xs font-black uppercase tracking-[0.2em] group-hover:bg-blue-600 transition-colors">
+                    <Link to={(product as any).customPath || `/product/${product.id}`} className="w-full flex items-center justify-between p-4 bg-slate-900 text-white text-xs font-black uppercase tracking-[0.2em] group-hover:bg-blue-600 transition-colors">
                       Technical Specifications
                       <ArrowUpRight className="w-4 h-4" />
                     </Link>

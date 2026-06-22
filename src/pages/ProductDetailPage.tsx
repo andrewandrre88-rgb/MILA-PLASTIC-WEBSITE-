@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "motion/react";
 import Markdown from "react-markdown";
@@ -12,10 +12,23 @@ import {
   Info
 } from "lucide-react";
 import { products } from "../data/products";
+import useSEO from "../hooks/useSEO";
 
 export default function ProductDetailPage() {
   const { id } = useParams();
   const product = products.find(p => p.id === id);
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    setSelectedImage(null);
+  }, [id]);
+
+  useSEO({
+    title: product ? `${product.name}` : "Product Details",
+    description: product ? `${product.description.slice(0, 150)}...` : "Premium plastic trigger sprayers, mist sprayers, foam pumps, and lotion pumps manufactured with 100% optical inspection.",
+    keywords: product ? `${product.name.toLowerCase()}, ${product.category.toLowerCase()}, trigger sprayer, lotion pump` : "trigger sprayer, mist sprayer, lotion pump"
+  });
 
   if (!product) {
     return (
@@ -27,6 +40,12 @@ export default function ProductDetailPage() {
       </div>
     );
   }
+
+  const galleryImages = (product as any).images && (product as any).images.length >= 4 
+    ? (product as any).images 
+    : [product.imageSrc, product.imageSrc, product.imageSrc, product.imageSrc];
+
+  const activeImage = selectedImage || product.imageSrc;
 
   return (
     <div className="bg-white">
@@ -56,9 +75,9 @@ export default function ProductDetailPage() {
             >
               <div className="aspect-[4/5] bg-slate-50 border border-slate-200 overflow-hidden relative group">
                 <img 
-                  src={product.imageSrc} 
+                  src={activeImage} 
                   alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-6 right-6">
@@ -69,13 +88,21 @@ export default function ProductDetailPage() {
                 </div>
               </div>
               
-              <div className="grid grid-cols-3 gap-4">
-                {[1, 2, 3].map(i => (
-                  <div key={i} className="aspect-square bg-slate-50 border border-slate-100 cursor-pointer overflow-hidden opacity-50 hover:opacity-100 transition-opacity">
+              <div className="grid grid-cols-4 gap-4">
+                {galleryImages.map((img: string, i: number) => (
+                  <div 
+                    key={i} 
+                    onClick={() => setSelectedImage(img)}
+                    className={`aspect-square bg-slate-50 border cursor-pointer overflow-hidden transition-all ${
+                      activeImage === img 
+                        ? 'border-blue-600 opacity-100 ring-2 ring-blue-100' 
+                        : 'border-slate-200 opacity-60 hover:opacity-100'
+                    }`}
+                  >
                     <img 
-                      src={product.imageSrc} 
-                      alt="Detail" 
-                      className={`w-full h-full object-cover ${i === 2 ? 'rotate-90' : i === 3 ? 'scale-150' : ''}`}
+                      src={img} 
+                      alt={`Detail ${i + 1}`} 
+                      className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
                   </div>
