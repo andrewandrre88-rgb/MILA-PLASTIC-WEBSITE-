@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Factory, MapPin, BarChart3, Users, Calendar, Globe2, Ship } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 const stats = [
   { label: "Main Market", value: "South America, Europe, Asia", icon: Globe2 },
@@ -12,6 +13,13 @@ const stats = [
 ];
 
 export default function AboutPage() {
+  useSEO({
+    title: "About Zhejiang Mila Plastic Industry Co., Ltd.",
+    description: "Learn about Zhejiang Mila Plastic Industry Co., Ltd., a premier trigger sprayer manufacturing factory specializing in high-performance cosmetic and industrial pumps, established in 2018.",
+    keywords: "Mila Plastics, trigger sprayer manufacturer, Zhejiang trigger spranyers, packaging factory China, custom plastic injection",
+    canonicalPath: "/about"
+  });
+
   return (
     <div className="bg-white">
       {/* Hero */}

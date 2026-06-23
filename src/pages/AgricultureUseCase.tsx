@@ -2,8 +2,16 @@ import React from "react";
 import { motion } from "motion/react";
 import { Leaf, Droplets, Wind, CheckCircle2, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 
 export default function AgricultureUseCase() {
+  useSEO({
+    title: "Garden, Gardening, & Agriculture Spray Bottle Mechanisms",
+    description: "Heavy-duty agricultural and gardening spray triggers, optimized for high-volume droplets, fine misting, pest control, and plant fertilizer application.",
+    keywords: "garden spray trigger, agriculture mist sprayer, plant water spray bottle, pesticide trigger mechanism",
+    canonicalPath: "/real-use-cases/agriculture"
+  });
+
   return (
     <div className="bg-white min-h-screen">
       {/* Navigation */}

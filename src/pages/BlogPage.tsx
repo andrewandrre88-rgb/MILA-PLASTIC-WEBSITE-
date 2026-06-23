@@ -3,8 +3,16 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, User, Tag } from "lucide-react";
 import { blogPosts } from "../data/blog";
+import useSEO from "../hooks/useSEO";
 
 export default function BlogPage() {
+  useSEO({
+    title: "Trigger Sprayer Industry Insights & Technical Journal",
+    description: "Explore Mila Plastics' Technical Journal. Gain deep industry insights on polymer science, industrial automation, and sustainable mechanical spraying technology.",
+    keywords: "trigger sprayer blog, polymer innovations, plastic injection molding news, spray bottle manufacturer articles, wholesale B2B packaging blog",
+    canonicalPath: "/blog"
+  });
+
   return (
     <div className="bg-white">
       {/* Header */}

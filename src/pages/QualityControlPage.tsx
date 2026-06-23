@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { ShieldCheck, CheckCircle2, ClipboardCheck, Microscope, Headphones } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 const qcSystages = [
   {
@@ -36,6 +37,13 @@ const qcSystages = [
 ];
 
 export default function QualityControlPage() {
+  useSEO({
+    title: "Rigorous 5-Stage Quality Control Protocol",
+    description: "Learn about Mila Plastics' strict quality control, leakproof testing, raw material inspection, and final checking systems ensuring zero-leakage, durable spray trigger pumps.",
+    keywords: "trigger sprayer leakage test, product inspections China, professional spray nozzle QA, high-durability plastic pumps",
+    canonicalPath: "/quality-control"
+  });
+
   return (
     <div className="bg-white">
       {/* Header */}

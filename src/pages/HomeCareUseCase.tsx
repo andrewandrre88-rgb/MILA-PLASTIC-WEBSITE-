@@ -2,8 +2,16 @@ import React from "react";
 import { motion } from "motion/react";
 import { Home, Shield, Zap, CheckCircle2, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 
 export default function HomeCareUseCase() {
+  useSEO({
+    title: "Household Cleaner & Detergent Bottle Trigger Sprayers",
+    description: "Discover our chemical-resistant trigger sprayers for home care and household cleaners, featuring 100% leakproof sealing and high formula compatibility.",
+    keywords: "home care sprayers, detergent spray bottle, chemical resistant trigger sprayer, household cleaner packaging",
+    canonicalPath: "/real-use-cases/home-care"
+  });
+
   return (
     <div className="bg-white min-h-screen">
       {/* Navigation */}

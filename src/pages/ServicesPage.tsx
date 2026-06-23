@@ -1,8 +1,16 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Settings, ShieldCheck, Truck, Headphones, CheckCircle2, Zap } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 export default function ServicesPage() {
+  useSEO({
+    title: "OEM/ODM Custom Trigger Sprayer & Lotion Pump Services",
+    description: "Mila Plastics provides world-class OEM & ODM custom injection molding services, support for 24/410, 28/400, 28/410 spray sizes, color-matching, and professional global B2B fulfillment.",
+    keywords: "custom trigger sprayer mold, OEM sprayer factory, ODM packaging design, injection molding Zhejiang, bulk lotion pump manufacturing",
+    canonicalPath: "/services"
+  });
+
   const services = [
     {
       title: "Product Customization",

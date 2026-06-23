@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Award, FileCheck, Shield, Zap, Globe, Target } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 const certifications = [
   {
@@ -30,6 +31,13 @@ const certifications = [
 ];
 
 export default function QualityCertificationPage() {
+  useSEO({
+    title: "ISO 9001 & SGS Certified Trigger Sprayer Factory",
+    description: "Mila Plastics holds official ISO 9001:2015 and ISO 14001:2015 certifications. Our plastic spray trigger and lotion pump products are certified compliant with SGS global safety and environment standards.",
+    keywords: "ISO 9001 trigger sprayer factory, SGS plastic pump compliance, certified chemical sprayer China, environmental friendly spray bottle supply",
+    canonicalPath: "/quality-certification"
+  });
+
   return (
     <div className="bg-white">
       {/* Hero Header */}

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Home, Leaf, FlaskConical, Droplets, Car, PlusSquare, Sparkles, ArrowRight } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 const useCases = [
   {
@@ -51,6 +52,13 @@ const useCases = [
 ];
 
 export default function RealUseCasesPage() {
+  useSEO({
+    title: "Industrial Applications of Heavy-Duty Trigger Sprayers",
+    description: "Discover real-world use cases of Mila Plastics' heavy-duty sprayers and lotion pumps engineered for Home Care, Agriculture, Automotive Care, Healthcare, and Personal Styling.",
+    keywords: "industrial sprayer solutions, heavy chemical trigger spray, garden trigger mist, medical trigger bottle",
+    canonicalPath: "/real-use-cases"
+  });
+
   return (
     <div className="bg-white">
       {/* Hero */}

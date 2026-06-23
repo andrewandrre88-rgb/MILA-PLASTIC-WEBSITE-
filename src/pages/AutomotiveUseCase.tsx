@@ -2,8 +2,16 @@ import React from "react";
 import { motion } from "motion/react";
 import { Car, Fuel, ShieldAlert, CheckCircle2, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 
 export default function AutomotiveUseCase() {
+  useSEO({
+    title: "Automotive Detailing & Car Care Spray Pumps",
+    description: "Automotive-grade spray trigger solutions designed to dispense heavy degreasers, wheel cleaners, and interior detailing sprays with ultimate ergonomic comfort.",
+    keywords: "automotive detailing sprayers, car care trigger mechanism, wheel cleaner spray bottle, leather spray pump",
+    canonicalPath: "/real-use-cases/automotive"
+  });
+
   return (
     <div className="bg-white min-h-screen">
       {/* Navigation */}

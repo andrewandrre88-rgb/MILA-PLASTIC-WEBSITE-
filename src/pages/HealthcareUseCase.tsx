@@ -2,8 +2,16 @@ import React from "react";
 import { motion } from "motion/react";
 import { PlusSquare, ShieldCheck, Microscope, CheckCircle2, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 
 export default function HealthcareUseCase() {
+  useSEO({
+    title: "Medical-Grade Sanitary & Disinfectant Dispensing Systems",
+    description: "High-precision sterile dispensing systems built for hospital disinfectants, sanitizers, and medical hygiene. Highly compatible with antibacterial formulations.",
+    keywords: "hospital sanitizing sprays, medical spray mechanism, disinfectant trigger dispenser, sterile room trigger sprayer",
+    canonicalPath: "/real-use-cases/healthcare"
+  });
+
   return (
     <div className="bg-white min-h-screen">
       {/* Navigation */}

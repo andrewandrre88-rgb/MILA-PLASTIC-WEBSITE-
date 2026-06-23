@@ -3,10 +3,18 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { ArrowLeft, Calendar, User, Clock, Share2 } from "lucide-react";
 import { blogPosts } from "../data/blog";
+import useSEO from "../hooks/useSEO";
 
 export default function BlogPostPage() {
   const { id } = useParams();
   const post = blogPosts.find(p => p.id === id);
+
+  useSEO({
+    title: post ? `${post.title} | Mila Technical Journal` : "Technical Blog Post",
+    description: post ? post.excerpt : "Deep tech insights on trigger sprayer engineering, production automation, and materials synthesis from Mila Plastics.",
+    keywords: post ? `${post.category.toLowerCase()}, spray mechanism innovations, polymer development, industrial robotics` : "packaging science, heavy-duty spranyer design",
+    canonicalPath: post ? `/blog/${post.id}` : "/blog"
+  });
 
   if (!post) {
     return (

@@ -320,12 +320,12 @@ export const products = [
     material: "100% PCR PP/PE",
     description: "100% metal-free, fully recyclable eco-bellows trigger sprayer. Designed to prevent chemical contamination and offer perfect sustainable compatibility.",
     features: ["100% Metal-Free Design", "Sustainable Eco PP Bellows", "Zero Formulation Oxidation", "High Alkaline Compatibility"],
-    imageSrc: "https://www.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+    imageSrc: "https://img.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
     images: [
-      "https://www.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
+      "https://img.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
     ],
     price: "Negotiable",
     moq: "10,000 PCS",
@@ -358,12 +358,12 @@ export const products = [
     material: "High-Molecular PP",
     description: "Extra-durable all-plastic industrial sprayer utilizing extreme tension polymer spring mechanisms for heavy degreasers and acidic formulations.",
     features: ["Extreme Chemical Tolerance", "Organic Solvent Safe", "1.5cc High Dosage Output", "Heavy Mechanical Durability"],
-    imageSrc: "https://www.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+    imageSrc: "https://img.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
     images: [
-      "https://www.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
+      "https://img.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
     ],
     price: "Negotiable",
     moq: "10,000 PCS",
@@ -396,12 +396,12 @@ export const products = [
     material: "PP / PE",
     description: "Versatile, metal-free all-plastic trigger that easily toggles from micro-fine atomized mist to a rich foam texture via an adjustable front flip shroud.",
     features: ["Adjustable Shroud Toggle", "Zero Metal Oxidation Risk", "Ultra-Fine Droplet Stream", "Perfect Retail Shelf Aesthetic"],
-    imageSrc: "https://www.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+    imageSrc: "https://img.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
     images: [
-      "https://www.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
+      "https://img.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
     ],
     price: "Negotiable",
     moq: "10,000 PCS",
@@ -434,12 +434,12 @@ export const products = [
     material: "PP / Polyester",
     description: "Compact, sleek palm-size mini trigger sprayer built without any metal parts. Exquisite premium spray performance for high-end cosmetics and household mist products.",
     features: ["Ultra-Compact Footprint", "0.3cc Precision Fine Mist", "Luxurious Clean Aesthetic", "Class 8 Cleanroom Produced"],
-    imageSrc: "https://www.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+    imageSrc: "https://img.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
     images: [
-      "https://www.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
+      "https://img.triggerssprayer.com/photo/pl13133314-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
     ],
     price: "Negotiable",
     moq: "10,000 PCS",
@@ -472,12 +472,12 @@ export const products = [
     material: "100% Recyclable PP",
     description: "Premium white H-type all-plastic trigger sprayer featuring advanced non-spill locking technology. Fully recyclable and perfect for garden, household, cleaner, and chemical spray bottles.",
     features: ["H-Type High Pressure Output", "Non-Spill Leakproof Technology", "100% Metal-Free & Recyclable", "Ergonomic Hand-Held Grip"],
-    imageSrc: "https://www.triggerssprayer.com/photo/pl54451714-white_all_plastic_trigger_sprayer_recyclable_h_type_non_spill_hand_held_trigger_sprayer.jpg",
+    imageSrc: "https://img.triggerssprayer.com/photo/pl54451714-white_all_plastic_trigger_sprayer_recyclable_h_type_non_spill_hand_held_trigger_sprayer.jpg",
     images: [
-      "https://www.triggerssprayer.com/photo/pl54451714-white_all_plastic_trigger_sprayer_recyclable_h_type_non_spill_hand_held_trigger_sprayer.jpg",
-      "https://www.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
-      "https://www.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
+      "https://img.triggerssprayer.com/photo/pl54451714-white_all_plastic_trigger_sprayer_recyclable_h_type_non_spill_hand_held_trigger_sprayer.jpg",
+      "https://img.triggerssprayer.com/photo/pl49386450-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl33658535-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg",
+      "https://img.triggerssprayer.com/photo/pl17524967-all_plastic_trigger_sprayer_fully_recyclable_sprayer_perfect_formula_compatibility_free_of_metal.jpg"
     ],
     price: "Negotiable",
     moq: "10,000 PCS",

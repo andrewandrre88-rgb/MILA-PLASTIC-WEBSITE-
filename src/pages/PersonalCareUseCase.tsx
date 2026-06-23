@@ -2,8 +2,16 @@ import React from "react";
 import { motion } from "motion/react";
 import { Sparkles, Droplets, Heart, CheckCircle2, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 
 export default function PersonalCareUseCase() {
+  useSEO({
+    title: "Personal Care, Cosmetic Mists, & Salon Spray Pumps",
+    description: "Delivering ultra-fine atomization with absolute precision. Ideal for body mists, professional salon hair applications, face toners, and cosmetic packaging.",
+    keywords: "cosmetic mist sprayer, salon spray mechanism, luxury body spray pump, fine hair misting bottle",
+    canonicalPath: "/real-use-cases/personal-care"
+  });
+
   return (
     <div className="bg-white min-h-screen">
       {/* Navigation */}
