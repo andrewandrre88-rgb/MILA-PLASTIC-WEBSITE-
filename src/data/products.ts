@@ -502,5 +502,41 @@ export const products = [
       ### 100% Recyclable Mono-Material
       This product is developed strictly without any metallic springs, steel glass balls, or non-recyclable components, allowing complete single-stream packaging disposal and promoting a sustainable circular economy.
     `
+  },
+  {
+    id: "MT-05-Clip",
+    name: "24mm 28mm Mini Trigger Sprayer PP Plastic with Clip Mist Spray 28/410",
+    category: "Trigger",
+    material: "PP",
+    description: "Advanced 24mm/28mm mini trigger sprayer featuring a secure locking safety clip. Built from 100% recyclable cosmetic-grade PP plastic, it delivers a precise, ultra-fine mist spray perfect for high-end styling, cosmetic, and cleaning products.",
+    features: ["Removable Safety Clip Lock", "Dual 24mm/28mm Neck Sizes", "0.2cc Precision Fine Mist", "100% Toxin-Free Recyclable PP"],
+    imageSrc: "https://img.triggerssprayer.com/photo/pt213612492-24mm_28mm_mini_trigger_sprayer_pp_plastic_with_clip_mist_spray_mini_trigger_28_410.jpg",
+    images: [
+      "https://img.triggerssprayer.com/photo/pt213612492-24mm_28mm_mini_trigger_sprayer_pp_plastic_with_clip_mist_spray_mini_trigger_28_410.jpg",
+      "https://img.triggerssprayer.com/photo/pt213612495-24mm_28mm_mini_trigger_sprayer_pp_plastic_with_clip_mist_spray_mini_trigger_28_410.jpg"
+    ],
+    price: "Negotiable",
+    moq: "10,000 PCS",
+    packaging: "1,000 PCS/CTN",
+    deliveryPeriod: "10-15 Days",
+    paymentMethod: "T/T, L/C, Western Union",
+    supplyCapacity: "3,500,000 PCS/WEEK",
+    specs: {
+      dosage: "0.2±0.05ml",
+      sizes: "24/410, 24/415, 28/410",
+      material: "Premium Cosmetic-Grade PP",
+      spring: "External SUS304 High-Tension Stainless Steel Spring",
+      origin: "Quzhou, Zhejiang, China"
+    },
+    detailedInfo: `
+      ### Multi-Size Custom Closure Option
+      Highly compatible in both 24/410 and 28/410 thread neck dimensions. It provides ultimate compatibility across diverse plastic and glass containers designed for cosmetic mists, personal care, and spray-on formulations.
+
+      ### Detachable On/Off Security Clip
+      Specifically integrated with an elegant safety clip that locks the finger trigger in place when not in use. It ensures 100% leakproof defense during transport, shipping, and active e-commerce distribution, preventing accidental actuation.
+
+      ### Superior Ultra-Fine Mist Spray
+      Outputs a perfectly distributed, high-density 0.2cc mist cloud with a soft stroke. The external spring action keeps standard liquid formulations protected from early metal reaction and preserves raw essential oils.
+    `
   }
 ];
